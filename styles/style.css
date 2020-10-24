@@ -417,12 +417,12 @@ h2{
         width: 80%;
         left: 10%;
         top: 2%;
-        height: 700px;
+        height: 80%;
         filter: blur(20px);
     }
     .teamContainer{
         margin-left: 0;
-        height: 400px;
+        height: 50%;
         margin-top: -4%;
     }
     .teamItem{
