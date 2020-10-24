@@ -27,6 +27,126 @@ body{
     background-color: #262626;
 
 }
+.loading{
+    transform: scale(1.2);
+    top: 10%;
+    background-color: #262626;
+    z-index: 3000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    
+    animation: fade 1s ease-in 1 forwards;
+    animation-delay: 3s;
+}
+.l1{
+    position: absolute;
+    
+    z-index: 4;
+    width: 4%;
+    top: 31.5%;
+    left: 48.2%;
+    z-index: 3;
+    animation: rotate5 0.5s linear infinite forwards;
+}
+.l2{
+    position: absolute;
+    width: 6%;
+    top: 27.5%;
+    left: 47.1%;
+    z-index: 3;
+    animation: rotate4 5s linear infinite forwards;
+}
+.l3{
+    position: absolute;
+    width: 20%;
+    top: 16.5%;
+    left: 40.1%;
+    z-index: 2;
+    animation: rotate3 5s linear infinite forwards;
+}
+.l4{
+    position: absolute;
+    width: 22%;
+    top: 13%;
+    left: 39%;
+    z-index: 1;
+    animation: rotate2 2s ease-in-out infinite alternate;
+}
+.l5{
+    position: absolute;
+    width: 25%;
+    top: 10%;
+    left: 37.5%;
+    z-index: 0;
+    animation: rotate1 1s ease-in-out infinite alternate;
+}
+@keyframes rotate1{
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.03);
+    }
+}
+@keyframes rotate2{
+    0%{
+        transform: scale(1.0) rotate(0deg);
+    }
+    100%{
+        transform: scale(1.01) rotate(360deg);
+    }
+}
+@keyframes rotate3{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+}
+@keyframes rotate4{
+    0%{
+        transform: scale(1.0) rotate(0deg);
+    }
+    100%{
+        transform: scale(1.07) rotate(-160deg);
+    }
+}
+@keyframes rotate5{
+    0%{
+        transform: scale(1.0) rotate(0deg);
+    }
+    100%{
+        transform: scale(1.0) rotate(360deg);
+    }
+}
+@keyframes fade{
+    0%{ 
+        transform: scale(1.2);
+        opacity: 100%;
+    }
+    99%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.1);
+        display: none;
+        opacity: 0%;
+    }
+}
+@keyframes fade2{
+    0%{ 
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
 .brush1{
     background-image: url(../assets/img/brush1.png);
     background-size:cover;
@@ -85,6 +205,7 @@ body{
 .arrows{
     user-select: none;
     cursor: pointer;
+    z-index: 300;
 }
 
 .arrow{
@@ -93,10 +214,12 @@ body{
     bottom: 1%;
     width: 7%;
     animation: arrow1 1s ease-in-out infinite alternate;
-    z-index: 4;
     user-select: none;
     transition: 5s ease-in-out;
     opacity: 100%;
+    user-select: none;
+    cursor: pointer;
+    z-index: 300;
 }
 .arrow2{
     position: absolute;
@@ -104,10 +227,13 @@ body{
     bottom: 5%;
     width: 7%;
     animation: arrow2 1s ease-in-out infinite alternate;
-    z-index: 4;
     user-select: none;
+    cursor: pointer;
+    z-index: 300;
+    
 }
 h1{
+    z-index: 0;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -119,7 +245,8 @@ h1{
     filter: blur(0px);
     transition: 1s ease-in-out;
 }
-h2{
+h2{ 
+    z-index: 0;
     position: relative;
     text-align: center;
     font-family: RobotoLight;
@@ -130,11 +257,13 @@ h2{
     transition: 1s ease-in-out;
 }
 .h31{
+    z-index: 1;
     font-family: RobotoBold;
     font-size: 100px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: -25% ;
+    position: absolute;
+    top: 10% ;
     opacity: 0%;
     filter: blur(30px);
     transform: scale(1.5);
@@ -147,12 +276,14 @@ h2{
 }
 
 .about1{
+    position: absolute;
+    z-index: 4;
     display: flex;
     justify-content: space-around;
     width: 60%;
     height: 600px;
     margin-left: 20%;
-    margin-top: 5%;
+    top: 32%;
     font-size: 30px;
     opacity: 0%;
     filter: blur(20px);
@@ -163,7 +294,7 @@ h2{
     font-family: RobotoBold;
     text-transform: uppercase;
     text-align: center;
-    margin-top: -19% ;
+    margin-top: 0% ;
     transition: 1s ease-in-out;
     background-image: url(../assets/img/head2.png);
     background-position: center;
@@ -174,12 +305,13 @@ h2{
     margin-left: 26.5%;
 }
 .about2{
+    user-select: none;
     position: absolute;
     display: flex;
     justify-content: space-around;
     width: 80%;
     left: 10%;
-    top: 12%;
+    top: 2%;
     height: 800px;
     z-index: 6;
     flex-direction: column;
@@ -191,7 +323,7 @@ h2{
     display: flex;
     margin-left: 0;
     height: 400px;
-    margin-top: -20%;
+    margin-top: -4%;
     text-align: center;
     justify-content: space-around;
 }
@@ -219,6 +351,9 @@ h2{
     background-image: url(../assets/img/phone24.png);
 }
 .about2 img{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     filter: grayscale(0.75);
     margin-left: 25%;
     width: 50%;
