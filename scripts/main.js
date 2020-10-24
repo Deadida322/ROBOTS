@@ -115,7 +115,7 @@ function scroll1(event, d){
         }
 
 
-        if (posY >= 7  && k > 0 ){
+        if (posY > 8  && k > 0 ){
             $(".brush1").css({
                 filter : 'blur(10px)',
                 opacity: '0%',
@@ -148,7 +148,7 @@ function scroll1(event, d){
             });
 
         }
-        if (posY > 12  && k > 0 ){
+        if (posY > 15  && k > 0 ){
 
             $(".brush2").css({
                 opacity: '0%',
@@ -167,7 +167,7 @@ function scroll1(event, d){
             $(".brush4").css({
                 opacity: '100%',
                 filter : 'blur(0px)',
-                transform: 'scale(1.0)'
+                transform: 'scale(1.2)'
             });
             $(".about2").css({
                 opacity: '00%',
