@@ -103,16 +103,23 @@ function scroll1(event, d){
                     filter : 'blur(15px)',
                     transform: 'scale(1.5)'
                 });
+                $(".about3").css({
+                    opacity: '00%',
+                    filter : 'blur(10px)',
+                    transform: 'scale(1.7)',
+                    zIndex : '0'
+                });
 
             }
             
         }
 
 
-        if (posY > 7  && k > 0 ){
+        if (posY >= 7  && k > 0 ){
             $(".brush1").css({
-                filter : 'blur(5px)',
-                opacity: '0%'
+                filter : 'blur(10px)',
+                opacity: '0%',
+                transform: 'scale(0.95)'
             });
             $(".brush2").css({
                 opacity: '60%',
@@ -139,6 +146,7 @@ function scroll1(event, d){
                 filter : 'blur(0px)',
                 transform: 'scale(1)'
             });
+
         }
         if (posY > 12  && k > 0 ){
 
@@ -165,6 +173,12 @@ function scroll1(event, d){
                 opacity: '00%',
                 filter : 'blur(15px)',
                 transform: 'scale(0.7)'
+            });
+            $(".about3").css({
+                opacity: '100%',
+                filter : 'blur(0px)',
+                transform: 'scale(1)',
+                zIndex : '33000'
             });
         }
     }
