@@ -393,7 +393,7 @@ h2{
     background-size: cover;
 }
 .qr{
-    margin-top: 20px;
+    margin-top: 5%;
     background-image: url(../assets/img/qr.png);
     width: 40%;
     height: 60%;
@@ -402,6 +402,12 @@ h2{
     background-size: cover;
 }
 @media screen and (max-width: 1600px){   
+    .h31{
+        z-index: 1;
+        font-family: RobotoBold;
+        font-size: 80px;
+        
+    }
     .h32{
         font-size: 70px;
         text-align: center;
@@ -427,7 +433,7 @@ h2{
     }
     .teamItem{
         width: 24%;
-        height: 440px;
+        height: 120%;
         padding-top: 60px ;
         padding-bottom: 120px;
     }
@@ -442,23 +448,23 @@ h2{
         height: 600px;
         margin-left: 20%;
         margin-top: 5%;
-        font-size: 23px;
+        font-size: 19px;
     }
     .txt{
         padding: 10px;
         text-align: center;
         width: 120%;
-        height: 400px;
+        height: 55%;
         background-image: url(../assets/img/phone1.png);
         background-position: center;
         background-size: cover;
     }
     .qr{
-        margin-top: 60px;
+        margin-top: 4%;
         background-image: url(../assets/img/qr.png);
         width: 40%;
         height: 40%;
-        border-radius: 15px;;
+        border-radius: 9px;
         background-position: center;
         background-size: cover;
     }
