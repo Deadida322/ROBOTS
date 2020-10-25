@@ -557,25 +557,25 @@ h2{
         position: absolute;
         text-align: center;
         font-family: RobotoBold;
-        margin-top: 10%;
-        font-size: 160px;
         transform: scale(1);
         filter: blur(0px);
         transition: 1s ease-in-out;
-        margin-left: 27%;
+        margin-top: 5%;
+        font-size: 23vw;
+        margin-left: 16%;
     }
     h2{ 
         z-index: 0;
         position: absolute;
         text-align: center;
         font-family: RobotoLight;
-        font-size: 50px;
-        margin-top: 27%;
-        margin-left: 48.5%;
+        font-size: 7vw;
+        margin-top: 26%;
+        margin-left: 46.5%;
     }
     .teamItemS{
         width: 33%;
-        height: 140%;
+        height: 180%;
         padding-top: 60px ;
         padding-bottom: 120px;
     }
@@ -603,9 +603,6 @@ h2{
         font-size: 55px;
         height: 32%;
     }
-    .arrows{
-        transition: 1s ease-in;
-    }
     .about2{
         width: 80%;
         left: 10%;
@@ -620,7 +617,7 @@ h2{
     }
     .teamItem{
         width: 24%;
-        height: 160%;
+        height: 175%;
         padding-top: 60px ;
         padding-bottom: 120px;
     }
@@ -630,8 +627,6 @@ h2{
         width: 50%;
     }
     .about1{
-        display: flex;
-        justify-content: space-around;
         width: 70%;
         height: 600px;
         margin-left: 24%;
@@ -643,17 +638,116 @@ h2{
         text-align: center;
         width: 140%;
         height: 34%;
-        background-image: url(../assets/img/phone1.png);
-        background-position: center;
-        background-size: cover;
     }
     .qr{
         margin-top: 2%;
-        background-image: url(../assets/img/qr.png);
         width: 60%;
         height: 30%;
-        border-radius: 9px;
-        background-position: center;
-        background-size: cover;
     }
+}
+@media screen and (max-width: 800px){   
+    .about1{
+        margin-top: 1.5%;
+    }
+
+    h1{
+        margin-top: 5%;
+        font-size: 23vw;
+        margin-left: 16%;
+    }
+    h2{ 
+
+        font-size: 7vw;
+        margin-top: 26%;
+        margin-left: 46.5%;
+    }
+    .teamItemS{
+        height: 165%;
+    }
+
+    .h31{
+        width: 35%;
+        z-index: 1;
+        font-size: 45px;
+        left: 10%;
+    }
+    .h32{
+        font-size: 45px;
+        width: 50%;
+        padding-top: 3%;
+        height: 100px;
+    }
+    .h33{
+        margin-left: 25%;
+        padding-top: 2%;
+        font-size: 45px;
+        height: 32%;
+    }
+
+    .teamContainer{
+        font-size: 11px;
+    }
+    .teamItem{
+        height: 170%;
+    }
+
+}
+@media screen and (max-width: 700px){   
+    .qr{
+        margin-top: 5%;
+        width: 60%;
+        height: 25%;
+    }
+    .about1{
+        font-size: 11.5px;
+        margin-top: 0%;
+    }
+
+    h1{
+        margin-top: 5%;
+        font-size: 23vw;
+        margin-left: 16%;
+    }
+    h2{ 
+
+        font-size: 7vw;
+        margin-top: 26%;
+        margin-left: 46.5%;
+    }
+    .teamItemS{
+        height: 165%;
+    }
+
+    .h31{
+        width: 35%;
+        z-index: 1;
+        font-family: RobotoBold;
+        font-size: 40px;
+        left: 10%;
+    }
+    .h32{
+        font-size: 40px;
+        width: 50%;
+        padding-top: 5%;
+        height: 100px;
+    }
+    .h33{
+        margin-left: 25%;
+        padding-top: 2%;
+        font-size: 40px;
+        height: 32%;
+    }
+
+    .teamContainer{
+        font-size: 11px;
+    }
+    .teamItem{
+        padding-top: 30px;
+        padding-bottom: 0px;
+        height: 170%;
+    }
+    .desc{
+        height: 170%;
+    }
+
 }
