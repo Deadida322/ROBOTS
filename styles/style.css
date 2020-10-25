@@ -205,13 +205,14 @@ body{
     transition: 1s ease-in-out;
 }
 .arrows{
+    position: fixed;
     user-select: none;
     cursor: pointer;
     z-index: 300;
 }
 
 .arrow{
-    position: absolute;
+    position: fixed;
     left: 47%;
     bottom: 1%;
     width: 7%;
@@ -224,7 +225,7 @@ body{
     z-index: 300;
 }
 .arrow2{
-    position: absolute;
+    position: fixed;
     left: 47%;
     bottom: 5%;
     width: 7%;
@@ -467,6 +468,102 @@ h2{
     background-size: cover;
 }
 @media screen and (max-width: 1600px){   
+    .teamItemS{
+      
+        width: 33%;
+        height: 140%;
+        padding-top: 60px ;
+        padding-bottom: 120px;
+    }
+    .about3{
+
+        width: 80%;
+        left: 10%;
+        top: 2%;
+        height: 80%;
+    }
+    .h31{
+        z-index: 1;
+        font-family: RobotoBold;
+        font-size: 80px;
+        
+    }
+    .h32{
+        font-size: 70px;
+    }
+    .h33{
+        font-size: 70px;
+        height: 22%;
+    }
+    .about2{
+        width: 80%;
+        left: 10%;
+        top: 2%;
+        height: 80%;
+    }
+    .teamContainer{
+        margin-left: 0;
+        height: 50%;
+        margin-top: -4%;
+    }
+    .teamItem{
+        width: 24%;
+        height: 140%;
+        padding-top: 60px ;
+        padding-bottom: 120px;
+    }
+    .about2 img{
+        margin-left: 25%;
+        width: 50%;
+    }
+    .about1{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        height: 600px;
+        margin-left: 20%;
+        margin-top: 5%;
+        font-size: 19px;
+    }
+    .txt{
+        padding: 10px;
+        text-align: center;
+        width: 120%;
+        height: 55%;
+        background-image: url(../assets/img/phone1.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .qr{
+        margin-top: 4%;
+        background-image: url(../assets/img/qr.png);
+        width: 40%;
+        height: 40%;
+        border-radius: 9px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 900px){   
+    h1{
+        z-index: 0;
+        position: relative;
+        text-align: center;
+        font-family: RobotoBold;
+        margin-top: 10%;
+        font-size: 120px;
+        transform: scale(1);
+        filter: blur(0px);
+        transition: 1s ease-in-out;
+    }
+    h2{ 
+        z-index: 0;
+        position: relative;
+        text-align: center;
+        font-family: RobotoLight;
+        font-size: 40px;
+        margin-top: -3%;
+    }
     .teamItemS{
       
         width: 33%;
