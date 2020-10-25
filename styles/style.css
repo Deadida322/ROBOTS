@@ -563,7 +563,24 @@ h2{
     }
 }
 @media screen and (max-width: 900px){   
+    .brush1{
+        transform: scale(1.5);
+        filter: blur(1px);
+    }
+    .brush2{
+        transform: scale(1.5);
+        filter: blur(5px);
+    }
+    .brush3{
+        transform: scale(1.5);
+        filter: blur(5px);
+    }
+    .brush4{
+        transform: scale(1.3);
+        filter: blur(5px);
+    }
     .about2{
+        filter: blur(5px);
         width: 80%;
         margin-left: 10%;
         top: 2%;
@@ -598,12 +615,14 @@ h2{
         padding-bottom: 120px;
     }
     .about3{
+        filter: blur(5px);
         width: 80%;
         left: 20%;
         top: 2%;
         height: 80%;
     }
     .h31{
+        filter: blur(5px);
         z-index: 1;
         font-family: RobotoBold;
         font-size: 55px;
