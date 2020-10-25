@@ -551,15 +551,7 @@ h2{
         top: 2%;
         height: 80%;
     }
-    .arrow{
-        z-index: 333000;
-    }
-    .arrow2{
-        z-index: 333000;
-    }
-    .arrows{
-        z-index: 333000;
-    }
+
     h1{
         z-index: 0;
         position: absolute;
