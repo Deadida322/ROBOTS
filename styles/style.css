@@ -208,7 +208,7 @@ body{
     position: fixed;
     user-select: none;
     cursor: pointer;
-    z-index: 300;
+    z-index: 2999;
 }
 
 .arrow{
@@ -563,19 +563,60 @@ h2{
     }
 }
 @media screen and (max-width: 900px){   
+    .h31{
+        background-image: url(../assets/img/head1m.webp);
+    }
+    
+    .h32{
+        background-image: url(../assets/img/head2m.webp);
+    }
+    .h33{
+        background-image: url(../assets/img/head3m.webp);
+    }
+    .teamItem1{
+        background-image: url(../assets/img/phone21m.webp);
+    }
+    .teamItem2{
+        background-image: url(../assets/img/phone22m.webp);
+    }
+    .teamItem3{
+        background-image: url(../assets/img/phone23m.webp);
+    }
+    .teamItem4{
+        background-image: url(../assets/img/phone24m.webp);
+    }
+    .teamItem11{
+        background-image: url(../assets/img/phone33.png);
+    }
+    .teamItem22{
+        background-image: url(../assets/img/phone32m.webp);
+    }
+    .teamItem33{
+        background-image: url(../assets/img/phone33.png);
+    }
+    .txt{
+        background-image: url(../assets/img/phone1m.webp);
+    }
+    .qr{
+        background-image: url(../assets/img/qrm.webp);
+    }
     .brush1{
+        
         transform: scale(1.5);
         filter: blur(1px);
     }
     .brush2{
+        background-image: url(../assets/img/brush2m.webp);
         transform: scale(1.5);
         filter: blur(5px);
     }
     .brush3{
+        background-image: url(../assets/img/brush3m.webp);
         transform: scale(1.5);
         filter: blur(5px);
     }
     .brush4{
+        background-image: url(../assets/img/brush4m.webp);
         transform: scale(1.3);
         filter: blur(5px);
     }
