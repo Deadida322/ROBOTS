@@ -214,7 +214,7 @@ body{
 .arrow{
     position: fixed;
     left: 47%;
-    bottom: 1%;
+    bottom: 2%;
     width: 7%;
     animation: arrow1 1s ease-in-out infinite alternate;
     user-select: none;
@@ -227,7 +227,7 @@ body{
 .arrow2{
     position: fixed;
     left: 47%;
-    bottom: 5%;
+    bottom: 7%;
     width: 7%;
     animation: arrow2 1s ease-in-out infinite alternate;
     user-select: none;
@@ -242,7 +242,7 @@ h1{
     text-transform: uppercase;
     font-family: RobotoBold;
     margin-top: 10%;
-    font-size: 270px;
+    font-size: 300px;
     text-shadow:0 0 20px rgba(255, 255, 255, 0.3);
     transform: scale(1);
     filter: blur(0px);
@@ -253,7 +253,7 @@ h2{
     position: relative;
     text-align: center;
     font-family: RobotoLight;
-    font-size: 87px;
+    font-size: 100px;
     margin-top: -3%;
     transform: scale(1);
     filter: blur(0px);
@@ -545,51 +545,74 @@ h2{
     }
 }
 @media screen and (max-width: 900px){   
+    .about2{
+        width: 80%;
+        margin-left: 10%;
+        top: 2%;
+        height: 80%;
+    }
+    .arrow{
+        z-index: 333000;
+    }
+    .arrow2{
+        z-index: 333000;
+    }
+    .arrows{
+        z-index: 333000;
+    }
     h1{
         z-index: 0;
-        position: relative;
+        position: absolute;
         text-align: center;
         font-family: RobotoBold;
         margin-top: 10%;
-        font-size: 120px;
+        font-size: 160px;
         transform: scale(1);
         filter: blur(0px);
         transition: 1s ease-in-out;
+        margin-left: 27%;
     }
     h2{ 
         z-index: 0;
-        position: relative;
+        position: absolute;
         text-align: center;
         font-family: RobotoLight;
-        font-size: 40px;
-        margin-top: -3%;
+        font-size: 50px;
+        margin-top: 27%;
+        margin-left: 48.5%;
     }
     .teamItemS{
-      
         width: 33%;
         height: 140%;
         padding-top: 60px ;
         padding-bottom: 120px;
     }
     .about3{
-
         width: 80%;
-        left: 10%;
+        left: 20%;
         top: 2%;
         height: 80%;
     }
     .h31{
         z-index: 1;
         font-family: RobotoBold;
-        font-size: 80px;
-        
+        font-size: 60px;
+        left: 10%;
     }
     .h32{
-        font-size: 70px;
+        font-size: 55px;
+        width: 50%;
+        padding-top: 2%;
+        height: 100px;
     }
     .h33{
-        font-size: 70px;
-        height: 22%;
+        margin-left: 25%;
+        padding-top: 2%;
+        font-size: 55px;
+        height: 32%;
+    }
+    .arrows{
+        transition: 1s ease-in;
     }
     .about2{
         width: 80%;
@@ -601,6 +624,7 @@ h2{
         margin-left: 0;
         height: 50%;
         margin-top: -4%;
+        font-size: 13px;
     }
     .teamItem{
         width: 24%;
@@ -608,6 +632,7 @@ h2{
         padding-top: 60px ;
         padding-bottom: 120px;
     }
+
     .about2 img{
         margin-left: 25%;
         width: 50%;
@@ -615,26 +640,26 @@ h2{
     .about1{
         display: flex;
         justify-content: space-around;
-        width: 60%;
+        width: 70%;
         height: 600px;
-        margin-left: 20%;
+        margin-left: 24%;
         margin-top: 5%;
-        font-size: 19px;
+        font-size: 13.5px;
     }
     .txt{
-        padding: 10px;
+        padding: 3px;
         text-align: center;
-        width: 120%;
-        height: 55%;
+        width: 140%;
+        height: 34%;
         background-image: url(../assets/img/phone1.png);
         background-position: center;
         background-size: cover;
     }
     .qr{
-        margin-top: 4%;
+        margin-top: 2%;
         background-image: url(../assets/img/qr.png);
-        width: 40%;
-        height: 40%;
+        width: 60%;
+        height: 30%;
         border-radius: 9px;
         background-position: center;
         background-size: cover;
