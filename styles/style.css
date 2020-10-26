@@ -884,3 +884,28 @@ h2{
         display: block;
     }
 }
+@media screen and (max-width: 1600px){   
+   
+    h1{
+        z-index: 0;
+        position: absolute;
+        text-align: center;
+        font-family: RobotoBold;
+        transform: scale(1);
+        filter: blur(0px);
+        transition: 1s ease-in-out;
+        margin-top: 6%;
+        font-size: 23vw;
+        right: 0vw;
+    }
+    h2{ 
+        z-index: 0;
+        position: absolute;
+        text-align: center;
+        font-family: RobotoLight;
+        margin-top: 26%;
+        font-size: 7vw;
+        margin-top: 27.5%;
+        right: 30vw;
+    }
+}
