@@ -242,13 +242,13 @@ if (document.documentElement.clientWidth <= 900){
             transform: 'scale(1.1)'
         });
         $("h1").css({
-            filter : 'blur(5px)',
+            filter : 'blur(10px)',
             transform: 'scale(0.5)',
             opacity: '0'
 
         });
         $("h2").css({
-            filter : 'blur(5px)',
+            filter : 'blur(10px)',
             transform: 'scale(0.5)',
             opacity: '0'
         });
