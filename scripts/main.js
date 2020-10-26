@@ -25,7 +25,7 @@ if (document.documentElement.clientWidth > 900){
                         opacity: '0.7'
                     });
                     $("h1").css({
-                        filter : 'blur(10px)',
+                        filter : 'blur(50px)',
                         transform: 'scale(0.5)',
                         opacity: '0'
 
