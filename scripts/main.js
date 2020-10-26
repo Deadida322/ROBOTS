@@ -12,7 +12,7 @@ if (document.documentElement.clientWidth > 900){
             if (posY>16){
                 posY = 16;
             }
-            console.log(posY);
+            console.log(document.documentElement.clientWidth);
                 let flag1 = 0;
                 if (posY > 2  && posY <= 8 && k > 0 ){
                     flag1 = true;
