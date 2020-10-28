@@ -25,7 +25,8 @@ body{
     font-family: RobotoLight;
     color: #ddedff;
     background-color: #262626;
-
+    width: 100vw;
+    height: 100vh;
 }
 .loading{
     transform: scale(1.2);
@@ -73,7 +74,6 @@ body{
 }
 .l1{
     position: absolute;
-    
     z-index: 4;
     width: 4%;
     top: 31.5%;
@@ -267,36 +267,42 @@ body{
     z-index: 300;
     
 }
+.hflex{
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+.hhflex{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
 h1{
     z-index: 0;
-    position: relative;
-    text-align: center;
     text-transform: uppercase;
     font-family: RobotoBold;
-    margin-top: 7%;
-    font-size: 300px;
-    text-shadow:0 0 20px rgba(255, 255, 255, 0.3);
     transform: scale(1);
     filter: blur(0px);
     transition: 1s ease-in-out;
-}
-h2{ 
-    z-index: 0;
-    position: relative;
-    text-align: center;
-    font-family: RobotoLight;
-    font-size: 100px;
-    margin-top: -6%;
-    transform: scale(1);
-    filter: blur(0px);
-    transition: 1s ease-in-out;
-}
-h1{
     font-size: 21vw;
 }
 h2{ 
+    z-index: 0;
+    text-align: center;
+    font-family: RobotoLight;
+    transform: scale(1);
+    filter: blur(0px);
+    transition: 1s ease-in-out;
+    margin-top: -6%;
     font-size: 7vw;
 }
+
 .h31{
     z-index: 1;
     font-family: RobotoBold;
@@ -508,26 +514,7 @@ h2{
     background-size: cover;
 }
 @media screen and (max-width: 1600px){   
-   
-    h1{
-        z-index: 0;
-        position: absolute;
-        font-family: RobotoBold;
-        transform: scale(1);
-        filter: blur(0px);
-        transition: 1s ease-in-out;
-        margin-top: 6%;
-        font-size: 23vw;
-    }
-    h2{ 
-        z-index: 0;
-        position: absolute;
-        text-align: center;
-        font-family: RobotoLight;
-        margin-top: 26%;
-        font-size: 7vw;
-        margin-top: 27.5%;
-    }
+
     .teamItemS{
         width: 33%;
         height: 160%;
@@ -555,7 +542,7 @@ h2{
         height: 22%;
     }
     .about2{
-        width: 80%;
+        width: auto;
         left: 10%;
         top: 2%;
         height: 80%;
@@ -675,30 +662,7 @@ h2{
         height: 80%;
     }
 
-    h1{
-        z-index: 0;
-        position: absolute;
-        text-align: center;
-        font-family: RobotoBold;
-        transform: scale(1);
-        filter: blur(0px);
-        transition: 2s ease-in-out;
-        margin-top: 5%;
-        font-size: 23vw;
-        width: 80%;
-        margin-left: 10%;
-    }
-    h2{ 
-        z-index: 0;
-        position: absolute;
-        text-align: center;
-        font-family: RobotoLight;
-        font-size: 7vw;
-        margin-top: 26%;
-        left: 45% ;
-        width: 30%;
-        transition: 2s ease-in-out;
-    }
+
     .teamItemS{
         width: 33%;
         height: 180%;
@@ -875,153 +839,5 @@ h2{
         display: block;
     }
 }
-@media screen and (max-width: 1600px){   
-   
-    h1{
-        z-index: 0;
-        font-family: RobotoBold;
-        transform: scale(1);
-        filter: blur(0px);
-        transition: 1s ease-in-out;
-        width: 100%;
-        font-size: 20vw;
-    }
-    h2{ 
-        z-index: 0;
-        position: absolute;
-        justify-content: center;
-        font-family: RobotoLight;
-        font-size: 7vw;
 
-    }
-    .hflex{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-        height: 110vh;
-        margin-top: -7%;
-    }
-}
-@media screen and (max-width: 1300px){   
-   
-    h1{
-        z-index: 0;
-        position: absolute;
-        display: flex;
-        font-family: RobotoBold;
-        transform: scale(1);
-        filter: blur(0px);
-        transition: 1s ease-in-out;
-        width: 100%;
-        font-size: 20vw;
-        margin-top: 8%;
-    }
-    h2{ 
-        z-index: 0;
-        position: absolute;
-        font-family: RobotoLight;
-        margin-top: 26%;
-        font-size: 6vw;
-        margin-top: 27.5%;
-    }
-}
-@media screen and (max-width: 1200px){   
-   
-    h1{
-        z-index: 0;
-        position: absolute;
-        display: flex;
-        font-family: RobotoBold;
-        transform: scale(1);
-        filter: blur(0px);
-        transition: 1s ease-in-out;
-        width: 100%;
-        font-size: 20vw;
-        margin-top: 8%;
-    }
-    h2{ 
-        z-index: 0;
-        position: absolute;
-        font-family: RobotoLight;
-        font-size: 5vw;
-        margin-top: 27.5%;
-        width: 30%;
-    }
-    
-}
-@media screen and (max-width: 1150px){   
-   
-    h1{
-        z-index: 0;
-        position: absolute;
-        display: flex;
-        font-family: RobotoBold;
-        transform: scale(1);
-        filter: blur(0px);
-        transition: 1s ease-in-out;
-        width: 100%;
-        font-size: 20vw;
-        margin-top: 8%;
-        
-    }
-    h2{ 
-        z-index: 0;
-        position: absolute;
-        font-family: RobotoLight;
-        font-size: 5vw;
-        margin-top: 27.5%;
 
-        width: 30%;
-    }
-}
-@media screen and (max-width: 900px){   
-   
-    h1{
-        z-index: 0;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        font-family: RobotoBold;
-        transform: scale(1);
-        filter: blur(0px);
-        transition: 2s ease-in-out;
-        font-size: 20vw;
-        margin-top: 8%;
-        margin-left: 0%;
-        
-    }
-    h2{ 
-        z-index: 0;
-        position: absolute;
-        transition: 2s ease-in-out;
-        font-family: RobotoLight;
-        font-size: 5vw;
-    }
-    h1{
-        z-index: 0;
-        font-family: RobotoBold;
-        transform: scale(1);
-        filter: blur(0px);
-        transition: 1s ease-in-out;
-        font-size: 20vw;
-    }
-    h2{ 
-        z-index: 0;
-        position: absolute;
-        justify-content: center;
-        font-family: RobotoLight;
-        font-size: 7vw;
-
-    }
-    .hflex{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        width: 120vw;
-        height: 110vh;
-        margin-top: -7%;
-    }
-}
