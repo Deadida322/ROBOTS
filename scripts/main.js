@@ -2,8 +2,8 @@
     let counter = 0;
 if (document.documentElement.clientWidth > 900){   
     function scroll1(event){
-                k = event.originalEvent.deltaY;
-            
+            k = event.originalEvent.deltaY;
+            let hh = $('title');
             if(k != 0){
             posY = Math.floor(posY + k/100);
             if (posY <0){
@@ -19,19 +19,15 @@ if (document.documentElement.clientWidth > 900){
                     flag1 = true;
                 }
                 if (flag1){
+                    hh.text('Game');
                     $(".brush1").css({
                         filter : 'blur(7px)',
                         transform: 'scale(1.5)',
                         opacity: '0.7'
                     });
-                    $("h1").css({
-                        filter : 'blur(50px)',
-                        transform: 'scale(0.5)',
-                        opacity: '0'
-
-                    });
-                    $("h2").css({
-                        filter : 'blur(10px)',
+        
+                    $(".hflex").css({
+                        filter : 'blur(7px)',
                         transform: 'scale(0.5)',
                         opacity: '0'
                     });
@@ -58,21 +54,16 @@ if (document.documentElement.clientWidth > 900){
                 }
                 if (posY >= 2  && k < 0 ){
                     posY = 0;
+                    hh.text('Main');
                     $(".brush1").css({
                         filter : 'blur(0px)',
                         transform: 'scale(2)',
                         opacity: '100%'
                     });
-                    $("h1").css({
+                    $(".hflex").css({
                         filter : 'blur(0px)',
                         transform: 'scale(1)',
-                        opacity: '100'
-
-                    });
-                    $("h2").css({
-                        filter : 'blur(0px)',
-                        transform: 'scale(1)',
-                        opacity: '100'
+                        opacity: '100%'
                     });
                     $(".arrows").css({
                         opacity: '100%'
@@ -93,18 +84,18 @@ if (document.documentElement.clientWidth > 900){
                         transform: 'scale(2.0)'
                     });
                     $(".h31").css({
-                        filter : 'blur(15px)',
+                        filter : 'blur(10px)',
                         transform: 'scale(2)',
                         opacity: '00%'
                     });
                     $(".about1").css({
                         opacity: '0%',
-                        filter : 'blur(15px)',
+                        filter : 'blur(10px)',
                         transform: 'scale(1.5)'
                     });
                     $(".about2").css({
                         opacity: '00%',
-                        filter : 'blur(15px)',
+                        filter : 'blur(10px)',
                         transform: 'scale(1.5)'
                     });
                     $(".about3").css({
@@ -120,6 +111,7 @@ if (document.documentElement.clientWidth > 900){
 
 
             if (posY > 8  && k > 0 ){
+                hh.text('Team');
                 $(".brush1").css({
                     filter : 'blur(10px)',
                     opacity: '0%',
@@ -153,10 +145,10 @@ if (document.documentElement.clientWidth > 900){
 
             }
             if (posY > 15  && k > 0 ){
-
+                hh.text('Social');
                 $(".brush2").css({
                     opacity: '0%',
-                    filter : 'blur(25px)',
+                    filter : 'blur(10px)',
                     transform: 'scale(0.8)'
                 });
                 $(".brush1").css({
@@ -175,7 +167,7 @@ if (document.documentElement.clientWidth > 900){
                 });
                 $(".about2").css({
                     opacity: '00%',
-                    filter : 'blur(15px)',
+                    filter : 'blur(10px)',
                     transform: 'scale(0.7)'
                 });
                 $(".about3").css({
@@ -197,16 +189,10 @@ if (document.documentElement.clientWidth > 900){
             filter : 'blur(5px)',
             transform: 'scale(1.5)'
         });
-        $("h1").css({
+        $(".hflex").css({
             filter : 'blur(10px)',
             transform: 'scale(0.5)',
-            opacity: '0'
-
-        });
-        $("h2").css({
-            filter : 'blur(10px)',
-            transform: 'scale(0.5)',
-            opacity: '0'
+            opacity: '00%'
         });
         $(".h31").css({
             display: 'block',
@@ -238,19 +224,13 @@ if (document.documentElement.clientWidth <= 900){
         k +=1;
         if (k == 1){
         $(".brush1").css({
-            filter : 'blur(5px)',
+            filter : 'blur(3px)',
             transform: 'scale(1.1)'
         });
-        $("h1").css({
-            filter : 'blur(10px)',
+        $(".hflex").css({
+            filter : 'blur(3px)',
             transform: 'scale(0.5)',
-            opacity: '0'
-
-        });
-        $("h2").css({
-            filter : 'blur(10px)',
-            transform: 'scale(0.5)',
-            opacity: '0'
+            opacity: '0%'
         });
         $(".h31").css({
             display: 'block',
@@ -272,13 +252,13 @@ if (document.documentElement.clientWidth <= 900){
     }
     if (k == 2){
         $(".brush1").css({
-            filter : 'blur(5px)',
+            filter : 'blur(3px)',
             opacity: '0%',
             transform: 'scale(0.95)'
         });
         $(".brush2").css({
             opacity: '60%',
-            filter : 'blur(5px)',
+            filter : 'blur(3px)',
             transform: 'scale(1.0)'
         });
         $(".brush3").css({
@@ -287,13 +267,13 @@ if (document.documentElement.clientWidth <= 900){
             transform: 'scale(1.3)'
         });
         $(".h31").css({
-            filter : 'blur(10px)',
+            filter : 'blur(3px)',
             transform: 'scale(0.7)',
             opacity: '00%'
         });
         $(".about1").css({
             opacity: '0%',
-            filter : 'blur(7px)',
+            filter : 'blur(3px)',
             transform: 'scale(0.7)'
         });
         $(".about2").css({
@@ -310,7 +290,7 @@ if (document.documentElement.clientWidth <= 900){
                 transform: 'scale(0.8)'
             });
             $(".brush1").css({
-                filter : 'blur(5px)',
+                filter : 'blur(3px)',
                 opacity: '0%'
             });
             $(".brush3").css({
@@ -344,16 +324,10 @@ if (document.documentElement.clientWidth <= 900){
                 transform: 'scale(1.7)',
                 opacity: '100%'
             });
-            $("h1").css({
+            $(".hflex").css({
                 filter : 'blur(0px)',
                 transform: 'scale(1)',
-                opacity: '100'
-
-            });
-            $("h2").css({
-                filter : 'blur(0px)',
-                transform: 'scale(1)',
-                opacity: '100'
+                opacity: '100%'
             });
             $(".brush2").css({
                 opacity: '0%',
