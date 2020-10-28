@@ -602,6 +602,9 @@ h2{
         height: 50vh;
         margin-left: 17vw;
     }
+    .about3, .about2, .about1{
+        filter: blur(0px);
+    }
     .h31{
         background-image: url(../assets/img/head1m.webp);
     }
@@ -642,35 +645,34 @@ h2{
     .brush1{
         transition: 2s ease-in-out;        
         transform: scale(1.5);
-        filter: blur(1px);
+        filter: blur(0px);
     }
     .brush2{
         transition: 2s ease-in-out;
         background-image: url(../assets/img/brush2m.webp);
         transform: scale(1.5);
-        filter: blur(3px);
+        filter: blur(0px);
     }
     .brush3{
         transition: 2s ease-in-out;
         background-image: url(../assets/img/brush3m.webp);
         transform: scale(1.5);
-        filter: blur(3px);
+        filter: blur(0px);
     }
     .brush4{
         transition: 2s ease-in-out;
         background-image: url(../assets/img/brush4m.webp);
         transform: scale(1.3);
-        filter: blur(3px);
+        filter: blur(0px);
     }
     .about2{
         transition: 2s ease-in-out;
-        filter: blur(3px);
+        filter: blur(px);
         width: 80%;
         margin-left: 10%;
         top: 2%;
         height: 80%;
     }
-
 
     .teamItemS{
         width: 33%;
@@ -682,7 +684,7 @@ h2{
     }
     .about3{
         transition: 2s ease-in-out;
-        filter: blur(3px);
+        filter: blur(0px);
         width: 80%;
         left: 20%;
         top: 2%;
@@ -690,7 +692,7 @@ h2{
     }
     .h31{
         transition: 2s ease-in-out;
-        filter: blur(3px);
+        filter: blur(0px);
         z-index: 1;
         font-family: RobotoBold;
         font-size: 55px;
