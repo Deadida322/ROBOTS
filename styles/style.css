@@ -4,8 +4,9 @@
     padding: 0;
     transition: 1s ease-in-out;
 }
-html { overflow-x: hidden;
-    overflow-y: hidden; }
+html {  
+    overflow: hidden;
+}
 a:hover{
     text-decoration: none;
 }
@@ -28,11 +29,87 @@ body{
     width: 100vw;
     height: 100vh;
 }
+nav{
+    cursor: pointer;
+    z-index: 999998;
+    position: fixed;
+    right:0;
+    background-color: rgba(0, 183, 255, 0.377);
+    border-left: 2px solid #363636;
+    width:30px;
+    height: 100vh;
+    opacity: 30%;
+}
+nav:hover{
+    opacity: 90%;
+}
+
+
+#stat{
+    margin-left: -48px;
+    margin-top: 12px;
+    width: 50px;
+    opacity: 0%;
+    transition: all 0.3s ease-in;
+}
+
+.arr{
+    width: 20px;
+    height: 15px;
+    margin: 5px;
+    transition: all 0.5s;
+}
+.arr:hover{
+    width: 30px;
+    margin: 5px 0 5px 0;
+}
+.up{
+    animation: arrnavup 1s  ease-in-out infinite alternate forwards ;
+}
+.down{
+    animation: arrnavdown 1s  ease-in-out infinite alternate forwards ;
+}
+.up :hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@keyframes arrnavup{
+    0%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(-7px);
+    }
+}
+@keyframes arrnavdown{
+    0%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(7px);
+    }
+}
+.navstat{
+    width: 20px;
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid rgba(0, 183, 255, 0.377);
+    margin: 5px;
+    background-color: #262626;
+}
+.navcontainer:hover #stat{
+    opacity: 100%;
+    transition: all 0.3s ease-in;
+}
+.navcontainer{
+    z-index: 999999;
+    transform: translateY(-22%);
+}
 .loading{
     transform: scale(1.2);
     top: 10%;
     background-color: #262626;
-    z-index: 3000;
+    z-index: 9999999;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -79,7 +156,7 @@ body{
     top: 31.5%;
     left: 48.2%;
     z-index: 3;
-    animation: rotate5 0.5s linear infinite forwards;
+    animation: rotate5 0.5s linear 10 forwards;
 }
 .l2{
     position: absolute;
@@ -87,7 +164,7 @@ body{
     top: 27.5%;
     left: 47.1%;
     z-index: 3;
-    animation: rotate4 5s linear infinite forwards;
+    animation: rotate4 5s linear 2 forwards;
 }
 .l3{
     position: absolute;
@@ -95,7 +172,7 @@ body{
     top: 16.5%;
     left: 40.1%;
     z-index: 2;
-    animation: rotate3 5s linear infinite forwards;
+    animation: rotate3 5s linear 2 forwards;
 }
 .l4{
     position: absolute;
@@ -103,7 +180,7 @@ body{
     top: 13%;
     left: 39%;
     z-index: 1;
-    animation: rotate2 2s ease-in-out infinite alternate;
+    animation: rotate2 2s ease-in-out 3 alternate;
 }
 .l5{
     position: absolute;
@@ -111,7 +188,7 @@ body{
     top: 10%;
     left: 37.5%;
     z-index: 0;
-    animation: rotate1 1s ease-in-out infinite alternate;
+    animation: rotate1 1s ease-in-out 6 alternate;
 }
 @keyframes rotate1{
     0%{
@@ -325,7 +402,7 @@ h2{
     z-index: 4;
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 1152px;
     height: 600px;
     margin-left: 20%;
     top: 32%;
@@ -408,10 +485,10 @@ h2{
     justify-content: space-around;
     background-size: cover;
     background-position: center;
-    width: 24%;
-    height: 160%;
     padding-top: 11% ;
     padding-bottom: 16%;
+    min-width: 372px;
+    height: 640px;
 }
 .teamItemS{
     flex-direction: column;
@@ -429,7 +506,7 @@ h2{
 .teamItem1{
     background-image: url(../assets/img/phone21.png);
 }
-.teamItem2{
+.teamItem112{
     background-image: url(../assets/img/phone22.png);
 }
 .teamItem3{
@@ -505,8 +582,8 @@ h2{
 .qr{
     margin-top: 5%;
     background-image: url(../assets/img/qr.png);
-    width: 40%;
-    height: 60%;
+    width: 420px;
+    height: 340px;
     border-radius: 15px;;
     background-position: center;
     background-size: cover;
@@ -550,13 +627,12 @@ h2{
         height: 50%;
         margin-top: -4%;
     }
-    .teamItem{
-        width: 24%;
-        height: 160%;
+
+     .teamItem{
         padding-top: 60px ;
         padding-bottom: 120px;
-        min-width: 269px;
-        min-height: 378px;
+        min-width: 265px;
+        height: 415px;
     }
     .about2 img{
         margin-left: 25%;
@@ -583,14 +659,18 @@ h2{
     .qr{
         margin-top: 4%;
         background-image: url(../assets/img/qr.png);
-        width: 40%;
-        height: 40%;
+        width: 360px;
+        height: 250px;
         border-radius: 9px;
         background-position: center;
         background-size: cover;
     }
 }
 @media screen and (max-width: 900px){   
+    nav{
+        
+        display: none;
+    }
     .hflex{
         position: absolute;
         top: 15%;
