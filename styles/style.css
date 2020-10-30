@@ -283,7 +283,7 @@ nav:hover{
     z-index: 4;
     opacity: 0%;
     transform: scale(2);
-    filter: blur(10px);
+    filter: blur(7px);
     transition: 1s ease-in-out;
 }
 .brush3{
@@ -297,7 +297,7 @@ nav:hover{
     z-index: 5;
     opacity: 0%;
     transform: scale(2);
-    filter: blur(10px);
+    filter: blur(7px);
     transition: 1s ease-in-out;
 }
 .brush4{
@@ -311,7 +311,7 @@ nav:hover{
     z-index: 5;
     opacity: 0%;
     transform: scale(1.5);
-    filter: blur(10px);
+    filter: blur(7px);
     transition: 1s ease-in-out;
 }
 .arrows{
@@ -388,7 +388,7 @@ h2{
     position: absolute;
     top: 10% ;
     opacity: 0%;
-    filter: blur(10px);
+    filter: blur(7px);
     transform: scale(1.5);
     transition: 1s ease-in-out;
     background-image: url(../assets/img/head1.png);
@@ -409,7 +409,7 @@ h2{
     top: 32%;
     font-size: 30px;
     opacity: 0%;
-    filter: blur(10px);
+    filter: blur(7px);
     transform: scale(1.5) ;
 }
 .h32{
@@ -453,7 +453,7 @@ h2{
     height: 800px;
     z-index: 6;
     flex-direction: column;
-    filter: blur(10px);
+    filter: blur(7px);
     opacity: 0%;
     transform: scale(1.5);
 }
@@ -468,7 +468,7 @@ h2{
     height: 800px;
     z-index: 0;
     flex-direction: column;
-    filter: blur(10px);
+    filter: blur(7px);
     opacity: 0%;
     transform: scale(1.5);
 }
@@ -681,7 +681,7 @@ h2{
         align-items: center;
         width: 100vw;
         height: 50vh;
-        margin-left: 0;
+        margin-left: 20%;
     }
     .about3, .about2, .about1{
         filter: blur(0px);
