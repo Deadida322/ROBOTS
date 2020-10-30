@@ -21,13 +21,13 @@ if (document.documentElement.clientWidth > 900){
             });
   
             $(".brush1").css({
-                filter : 'blur(7px)',
+                filter : 'blur(5px)',
                 transform: 'scale(1.5)',
                 opacity: '0.7'
             });
 
             $(".hflex").css({
-                filter : 'blur(7px)',
+                filter : 'blur(5px)',
                 transform: 'scale(0.5)',
                 opacity: '0'
             });
@@ -71,13 +71,13 @@ if (document.documentElement.clientWidth > 900){
         });
         hh.text('Team');
         $(".brush1").css({
-            filter : 'blur(10px)',
+            filter : 'blur(7px)',
             opacity: '0%',
             transform: 'scale(0.95)'
         });
         $(".brush2").css({
             opacity: '60%',
-            filter : 'blur(10px)',
+            filter : 'blur(7px)',
             transform: 'scale(1.0)'
         });
         $(".brush3").css({
@@ -86,13 +86,13 @@ if (document.documentElement.clientWidth > 900){
             transform: 'scale(1.7)'
         });
         $(".h31").css({
-            filter : 'blur(10px)',
+            filter : 'blur(7px)',
             transform: 'scale(0.7)',
             opacity: '00%'
         });
         $(".about1").css({
             opacity: '0%',
-            filter : 'blur(7px)',
+            filter : 'blur(5px)',
             transform: 'scale(0.7)'
         });
         $(".about2").css({
@@ -120,7 +120,7 @@ if (document.documentElement.clientWidth > 900){
             
             $(".brush2").css({
                 opacity: '0%',
-                filter : 'blur(10px)',
+                filter : 'blur(7px)',
                 transform: 'scale(0.8)'
             });
             $(".brush1").css({
@@ -129,7 +129,7 @@ if (document.documentElement.clientWidth > 900){
             });
             $(".brush3").css({
                 opacity: '100%',
-                filter : 'blur(10px)',
+                filter : 'blur(7px)',
                 transform: 'scale(1.2)'
             });
             $(".brush4").css({
@@ -139,7 +139,7 @@ if (document.documentElement.clientWidth > 900){
             });
             $(".about2").css({
                 opacity: '00%',
-                filter : 'blur(10px)',
+                filter : 'blur(7px)',
                 transform: 'scale(0.7)',
                 zIndex : '0'
             });
@@ -182,13 +182,13 @@ if (document.documentElement.clientWidth > 900){
             });
             $(".h31").css({
                 display: 'block',
-                filter : 'blur(10px)',
+                filter : 'blur(7px)',
                 transform: 'scale(1.5)',
                 opacity: '0%'
             });
             $(".about1").css({
                 opacity: '00%',
-                filter : 'blur(10px)',
+                filter : 'blur(7px)',
                 transform: 'scale(1.5)'
             });
             $(".about2").css({
@@ -207,7 +207,7 @@ if (document.documentElement.clientWidth > 900){
             });
             $(".brush2").css({
                 opacity: '00%',
-                filter : 'blur(10px)',
+                filter : 'blur(7px)',
                 transform: 'scale(2)'
             });
             
@@ -230,7 +230,7 @@ if (document.documentElement.clientWidth > 900){
         });
 
         $(".about2").css({
-            filter : 'blur(10px)',
+            filter : 'blur(7px)',
             transform: 'scale(1.5)',
             opacity: '0%',
             zIndex : '0'
@@ -243,7 +243,7 @@ if (document.documentElement.clientWidth > 900){
         });
         $(".brush3").css({
             opacity: '00%',
-            filter : 'blur(10px)',
+            filter : 'blur(7px)',
             transform: 'scale(2)'
         });
         $(".h31").css({
@@ -276,7 +276,7 @@ if (document.documentElement.clientWidth > 900){
             
     
             $(".about3").css({
-                filter : 'blur(10px)',
+                filter : 'blur(7px)',
                 transform: 'scale(1.5)',
                 opacity: '0%',
                 zIndex : '0'
@@ -289,7 +289,7 @@ if (document.documentElement.clientWidth > 900){
             });
             $(".brush4").css({
                 opacity: '00%',
-                filter : 'blur(10px)',
+                filter : 'blur(7px)',
                 transform: 'scale(2)'
             });
             $(".about2").css({
@@ -343,13 +343,13 @@ if (document.documentElement.clientWidth > 900){
                 });
                 
                 $(".brush1").css({
-                    filter : 'blur(7px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(1.5)',
                     opacity: '0.7'
                 });
     
                 $(".hflex").css({
-                    filter : 'blur(7px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(0.5)',
                     opacity: '0'
                 });
@@ -416,33 +416,33 @@ if (document.documentElement.clientWidth > 900){
                 });
                 $(".brush3").css({
                     opacity: '0%',
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(2)'
                 });
                 $(".brush4").css({
                     opacity: '0%',
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(2.0)'
                 });
                 $(".h31").css({
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(2)',
                     opacity: '00%'
                 });
                 $(".about1").css({
                     opacity: '0%',
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(1.5)'
                 });
                 $(".about2").css({
                     opacity: '00%',
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(1.5)',
                     zIndex : '0'
                 });
                 $(".about3").css({
                     opacity: '00%',
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(1.7)',
                     zIndex : '0'
                 });
@@ -460,13 +460,13 @@ if (document.documentElement.clientWidth > 900){
                 });
                 hh.text('Team');
                 $(".brush1").css({
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     opacity: '0%',
                     transform: 'scale(0.95)'
                 });
                 $(".brush2").css({
                     opacity: '60%',
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(1.0)'
                 });
                 $(".brush3").css({
@@ -486,13 +486,13 @@ if (document.documentElement.clientWidth > 900){
                 });
                 
                 $(".h31").css({
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(0.7)',
                     opacity: '00%'
                 });
                 $(".about1").css({
                     opacity: '0%',
-                    filter : 'blur(7px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(0.7)'
                 });
                 $(".about2").css({
@@ -521,7 +521,7 @@ if (document.documentElement.clientWidth > 900){
                 hh.text('Social');
                 $(".brush2").css({
                     opacity: '0%',
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(0.8)'
                 });
                 $(".brush1").css({
@@ -530,7 +530,7 @@ if (document.documentElement.clientWidth > 900){
                 });
                 $(".brush3").css({
                     opacity: '100%',
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(1.2)'
                 });
                 $(".brush4").css({
@@ -540,7 +540,7 @@ if (document.documentElement.clientWidth > 900){
                 });
                 $(".about2").css({
                     opacity: '00%',
-                    filter : 'blur(10px)',
+                    filter : 'blur(5px)',
                     transform: 'scale(0.7)',
                     zIndex : '00'
                 });
@@ -577,7 +577,7 @@ if (document.documentElement.clientWidth > 900){
             transform: 'scale(1.5)'
         });
         $(".hflex").css({
-            filter : 'blur(10px)',
+            filter : 'blur(5px)',
             transform: 'scale(0.5)',
             opacity: '00%'
         });
