@@ -17,7 +17,7 @@ if (document.documentElement.clientWidth > 900){
             var stat = $('title').html();
             document.getElementById('stat').innerHTML = stat;
             $('.navcontainer').css({
-                transform:'translateY(23vh)'
+                marginTop:'23vh'
             });
   
             $(".brush1").css({
@@ -67,7 +67,7 @@ if (document.documentElement.clientWidth > 900){
             backgroundColor: 'rgba(132, 0, 255, 0.202)'
         });
         $('.navcontainer').css({
-            transform:'translateY(49vh)'
+            marginTop:'49vh'
         });
         hh.text('Team');
         $(".brush1").css({
@@ -115,7 +115,7 @@ if (document.documentElement.clientWidth > 900){
                 backgroundColor: 'rgba(255, 0, 242, 0.202)'
             });
             $('.navcontainer').css({
-                transform:'translateY(90.5vh)'
+                marginTop:'93vh'
             });
             
             $(".brush2").css({
@@ -141,13 +141,13 @@ if (document.documentElement.clientWidth > 900){
                 opacity: '00%',
                 filter : 'blur(5px)',
                 transform: 'scale(0.7)',
-                zIndex : '0'
+                zIndex : '99998'
             });
             $(".about3").css({
                 opacity: '100%',
                 filter : 'blur(0px)',
                 transform: 'scale(1)',
-                zIndex : '33000'
+                zIndex : '99999'
             });
         }
     
@@ -166,7 +166,7 @@ if (document.documentElement.clientWidth > 900){
                 backgroundColor: 'rgba(0, 183, 255, 0.377)'
             });
             $('.navcontainer').css({
-                transform:'translateY(-3vh)'
+                marginTop:'-3vh'
             });
   
             $(".brush1").css({
@@ -215,7 +215,7 @@ if (document.documentElement.clientWidth > 900){
     if (ttt == 1){
         posY = 3;
         $('.navcontainer').css({
-            transform:'translateY(23vh)'
+            marginTop:'23vh'
         });
         hh.text('Game');
         stat = $('title').html();
@@ -259,7 +259,7 @@ if (document.documentElement.clientWidth > 900){
         });
 
         $(".about3").css({
-            zIndex : '0'
+            zIndex : '99998'
         });
     } 
         if (ttt == 2){
@@ -268,7 +268,7 @@ if (document.documentElement.clientWidth > 900){
             stat = $('title').html();
             document.getElementById('stat').innerHTML = stat;
             $('.navcontainer').css({
-                transform:'translateY(49vh)'
+                marginTop:'49vh'
             });
             $('nav').css({
                 backgroundColor: 'rgba(132, 0, 255, 0.202)'
@@ -335,7 +335,7 @@ if (document.documentElement.clientWidth > 900){
                 
                 hh.text('Game');
                 $('.navcontainer').css({
-                    transform:'translateY(23vh)'
+                    marginTop:'23vh'
                 });
 
                 $('nav').css({
@@ -392,7 +392,7 @@ if (document.documentElement.clientWidth > 900){
                 });
                 ttt = 0;
                 $('.navcontainer').css({
-                    transform:'translateY(-3vh)'
+                    marginTop:'-3vh'
                 });
                 posY = 0;
                 hh.text('Main');
@@ -456,7 +456,7 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 2;
                 
                 $('.navcontainer').css({
-                    transform:'translateY(49vh)'
+                    marginTop:'49vh'
                 });
                 hh.text('Team');
                 $(".brush1").css({
@@ -516,7 +516,7 @@ if (document.documentElement.clientWidth > 900){
                     backgroundColor: 'rgba(255, 0, 242, 0.202)'
                 });
                 $('.navcontainer').css({
-                    transform:'translateY(90.5vh)'
+                    marginTop:'93vh'
                 });
                 hh.text('Social');
                 $(".brush2").css({
@@ -570,7 +570,7 @@ if (document.documentElement.clientWidth > 900){
             backgroundColor: 'rgba(0, 26, 255, 0.202)'
         });
         $('.navcontainer').css({
-            transform:'translateY(23vh)'
+            marginTop:'23vh'
         });
         $(".brush1").css({
             filter : 'blur(5px)',
