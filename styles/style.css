@@ -270,7 +270,7 @@ nav:hover{
     z-index: 3;
     transform: scale(2);
     filter: blur(1px);
-    transition: 1s ease-in-out;
+    transition: 1.2s ease-in-out;
 }
 .brush2{
     background-image: url(../assets/img/brush2.png);
@@ -284,7 +284,7 @@ nav:hover{
     opacity: 0%;
     transform: scale(2);
     filter: blur(7px);
-    transition: 1s ease-in-out;
+    transition: 1.2s ease-in-out;
 }
 .brush3{
     background-image: url(../assets/img/brush3.png);
@@ -298,7 +298,7 @@ nav:hover{
     opacity: 0%;
     transform: scale(2);
     filter: blur(7px);
-    transition: 1s ease-in-out;
+    transition: 1.2s ease-in-out;
 }
 .brush4{
     background-image: url(../assets/img/brush4.png);
@@ -312,7 +312,7 @@ nav:hover{
     opacity: 0%;
     transform: scale(1.5);
     filter: blur(7px);
-    transition: 1s ease-in-out;
+    transition: 1.2s ease-in-out;
 }
 .arrows{
     position: fixed;
@@ -367,14 +367,14 @@ h1{
     z-index: 0;
     text-transform: uppercase;
     font-family: RobotoBold;
-    transition: 1s ease-in-out;
+    transition: 1.2s ease-in-out;
     font-size: 21vw;
 }
 h2{ 
     z-index: 0;
     text-align: center;
     font-family: RobotoLight;
-    transition: 1s ease-in-out;
+    transition: 1.2s ease-in-out;
     margin-top: -6%;
     font-size: 7vw;
 }
@@ -390,7 +390,7 @@ h2{
     opacity: 0%;
     filter: blur(7px);
     transform: scale(1.5);
-    transition: 1s ease-in-out;
+    transition: 1.2s ease-in-out;
     background-image: url(../assets/img/head1.png);
     background-position: center;
     background-size: cover;
@@ -409,7 +409,7 @@ h2{
     top: 32%;
     font-size: 30px;
     opacity: 0%;
-    filter: blur(7px);
+    filter: blur(5px);
     transform: scale(1.5) ;
 }
 .h32{
@@ -418,7 +418,7 @@ h2{
     text-transform: uppercase;
     text-align: center;
     margin-top: 0% ;
-    transition: 1s ease-in-out;
+    transition: 1.2s ease-in-out;
     background-image: url(../assets/img/head2.png);
     background-position: center;
     background-size: cover;
@@ -433,7 +433,7 @@ h2{
     text-transform: uppercase;
     text-align: center;
     margin-top: 0% ;
-    transition: 1s ease-in-out;
+    transition: 1.2s ease-in-out;
     background-image: url(../assets/img/head3.png);
     background-position: center;
     background-size: cover;
@@ -468,7 +468,7 @@ h2{
     height: 800px;
     z-index: 0;
     flex-direction: column;
-    filter: blur(7px);
+    filter: blur(5px);
     opacity: 0%;
     transform: scale(1.5);
 }
@@ -500,7 +500,7 @@ h2{
     width: 24%;
     height: 120%;
     min-width: 432px;
-    min-height: 455px;
+    min-height: 480px;
     padding-top: 60px ;
     padding-bottom: 120px;
 }
@@ -595,8 +595,8 @@ h2{
         width: 33%;
         height: 160%;
         padding-top: 60px ;
-        min-width: 322px;
-        min-height: 340px;
+        width: 288px;
+        height: 320px;
         padding-bottom: 120px;
     }
     .about3{
@@ -615,7 +615,8 @@ h2{
     }
     .h33{
         font-size: 70px;
-        height: 22%;
+        width: 500px;
+        height: 140px;
     }
     .about2{
         width: auto;
@@ -788,8 +789,10 @@ h2{
     .h33{
         margin-left: 25%;
         padding-top: 2%;
-        font-size: 55px;
-        height: 32%;
+        font-size: 44px;
+        width: 300px;
+        min-width: 300px;
+        height: 80px;
     }
     .about2{
         transition: 2s ease-in-out;
@@ -861,12 +864,7 @@ h2{
         padding-top: 3%;
         height: 100px;
     }
-    .h33{
-        margin-left: 25%;
-        padding-top: 2%;
-        font-size: 45px;
-        height: 32%;
-    }
+    
 
     .teamContainer{
         font-size: 11px;
