@@ -576,11 +576,13 @@ if (document.documentElement.clientWidth <= 900){
         k +=1;
         if (k == 1){
         $(".brush1").css({
-            transform: 'scale(1.1)'
+            transform: 'scale(1.1)',
+            filter : 'blur(2px)',
         });
         $(".hflex").css({
             transform: 'scale(0.5)',
-            opacity: '0%'
+            opacity: '0%',
+            filter : 'blur(2px)'
         });
         $(".about05").css({
             display: 'block',
@@ -591,7 +593,8 @@ if (document.documentElement.clientWidth <= 900){
         
         $(".brush2").css({
             opacity: '100%',
-            transform: 'scale(1.3)'
+            transform: 'scale(1.3)',
+            filter : 'blur(00px)',
         });
         
     }
@@ -601,12 +604,14 @@ if (document.documentElement.clientWidth <= 900){
             transform: 'scale(0.95)'
         });
         $(".brush2").css({
-            opacity: '60%',
+            opacity: '80%',
+            filter : 'blur(2px)',
             transform: 'scale(1.0)'
         });
         $(".brush3").css({
             opacity: '100%',
-            transform: 'scale(1.3)'
+            filter : 'blur(00px)',
+            transform: 'scale(1.2)'
         });
         $(".about05").css({
             display: 'block',
@@ -631,11 +636,13 @@ if (document.documentElement.clientWidth <= 900){
             });
             $(".brush3").css({
                 opacity: '100%',
-                transform: 'scale(1.1)'
+                transform: 'scale(1.0)',
+                filter : 'blur(2px)',
             });
             $(".brush4").css({
                 opacity: '100%',
-                transform: 'scale(1.1)'
+                filter : 'blur(00px)',
+                transform: 'scale(1.0)'
             });
             $(".about2").css({
                 opacity: '00%',
@@ -644,6 +651,7 @@ if (document.documentElement.clientWidth <= 900){
             $(".about3").css({
                 opacity: '100%',
                 transform: 'scale(1)',
+                filter : 'blur(00px)',
                 zIndex : '33000'
             });
             $(".arrows").css({
@@ -656,10 +664,12 @@ if (document.documentElement.clientWidth <= 900){
             k = 0;
             $(".brush1").css({
                 transform: 'scale(1.7)',
+                filter : 'blur(00px)',
                 opacity: '100%'
             });
             $(".hflex").css({
                 transform: 'scale(1)',
+                filter : 'blur(00px)',
                 opacity: '100%'
             });
             $(".brush2").css({
@@ -668,10 +678,12 @@ if (document.documentElement.clientWidth <= 900){
             });
             $(".brush3").css({
                 opacity: '0%',
+                filter : 'blur(2px)',
                 transform: 'scale(1.7)'
             });
             $(".brush4").css({
                 opacity: '0%',
+                filter : 'blur(2px)',
                 transform: 'scale(1.7)'
             });
             $(".about05").css({
