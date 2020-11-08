@@ -1014,6 +1014,9 @@ h2{
         margin-left: 20%;
     }
     .about3, .about2, .about05{
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         -webkit-filter: blur(1px);
                 filter: blur(1px);
     }
@@ -1055,9 +1058,9 @@ h2{
         background-image: url(../assets/img/qrm.webp);
     }
     .brush1{
-        -webkit-transition: 2s ease-in-out;
-        -o-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;        
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;        
         -webkit-transform: scale(1.5);        
             -ms-transform: scale(1.5);        
                 transform: scale(1.5);
@@ -1065,9 +1068,9 @@ h2{
                 filter: blur(0px);
     }
     .brush2{
-        -webkit-transition: 2s ease-in-out;
-        -o-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         background-image: url(../assets/img/brush2m.webp);
         -webkit-transform: scale(1.5);
             -ms-transform: scale(1.5);
@@ -1076,9 +1079,9 @@ h2{
                 filter: blur(1px);
     }
     .brush3{
-        -webkit-transition: 2s ease-in-out;
-        -o-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         background-image: url(../assets/img/brush3m.webp);
         -webkit-transform: scale(1.5);
             -ms-transform: scale(1.5);
@@ -1087,9 +1090,9 @@ h2{
                 filter: blur(1px);
     }
     .brush4{
-        -webkit-transition: 2s ease-in-out;
-        -o-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         background-image: url(../assets/img/brush4m.webp);
         -webkit-transform: scale(1.3);
             -ms-transform: scale(1.3);
@@ -1098,9 +1101,9 @@ h2{
                 filter: blur(1px);
     }
     .about2{
-        -webkit-transition: 2s ease-in-out;
-        -o-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         -webkit-filter: blur(1px);
                 filter: blur(1px);
         width: 80%;
@@ -1120,11 +1123,14 @@ h2{
     .about05{
         width:95vw;
         margin-left: 5%;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
     .about3{
-        -webkit-transition: 2s ease-in-out;
-        -o-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         -webkit-filter: blur(1px);
                 filter: blur(1px);
         width: 70%;
@@ -1134,9 +1140,9 @@ h2{
         height: 80%;
     }
     .h31{
-        -webkit-transition: 2s ease-in-out;
-        -o-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
         z-index: 1;
         font-family: RobotoBold;
@@ -1158,9 +1164,9 @@ h2{
         height: 80px;
     }
     .about2{
-        -webkit-transition: 2s ease-in-out;
-        -o-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         width: 80%;
         left: 10%;
         top: 2%;
@@ -1186,9 +1192,9 @@ h2{
         width: 50%;
     }
     .about1{
-        -webkit-transition: 2s ease-in-out;
-        -o-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         width: 70%;
         height: 600px;
         margin-left: 24%;
@@ -1206,10 +1212,15 @@ h2{
         width: 60%;
         height: 30%;
     }
+    .hflex{
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
     *{
-        -webkit-transition: all 1.5s ease-in-out;
-        -o-transition: all 1.5s ease-in-out;
-        transition: all 1.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 }
 @media screen and (max-width: 800px){   
