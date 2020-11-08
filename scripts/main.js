@@ -582,7 +582,7 @@ if (document.documentElement.clientWidth <= 900){
         $(".hflex").css({
             transform: 'scale(0.5)',
             opacity: '0%',
-            filter : 'blur(1px)'
+            filter : 'blur(0.5px)'
         });
         $(".about05").css({
             display: 'block',
