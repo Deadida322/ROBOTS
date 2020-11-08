@@ -677,7 +677,7 @@ if (document.documentElement.clientWidth <= 900){
             $(".about05").css({
                 display: 'block',
                 filter : 'blur(00px)',
-                transform: 'scale(1)',
+                transform: 'scale(1.5)',
                 opacity: '0%'
             });
             $(".about2").css({

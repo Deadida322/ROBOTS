@@ -15,7 +15,7 @@
     transition: 1s ease-in-out;
 }
 html {  
-    overflow: hidden;
+   overflow: hidden;
 }
 a:hover{
     text-decoration: none;
@@ -38,6 +38,13 @@ body{
     background-color: #262626;
     width: 100vw;
     height: 100vh;
+}
+.forever150{
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.5);
+    background-color: #262626; 
+    opacity: 0%;
 }
 nav{
     cursor: pointer;
@@ -625,7 +632,7 @@ h2{
         justify-content: space-around;
     width: 1152px;
     height: 600px;
-    margin-left: 20%;
+    margin-left: 23%;
     top: 32%;
     font-size: 30px;
 
@@ -685,7 +692,7 @@ h2{
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 80%;
+    max-width: 80%;
     left: 10%;
     top: 1%;
     height: 800px;
@@ -1110,14 +1117,19 @@ h2{
         min-width: 175px;
         min-height: 195px;
     }
+    .about05{
+        width:95vw;
+        margin-left: 5%;
+    }
     .about3{
         -webkit-transition: 2s ease-in-out;
         -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
         -webkit-filter: blur(0px);
                 filter: blur(0px);
-        width: 80%;
-        left: 10%;
+        width: 70%;
+        margin-left: 27%;
+        left:0;
         top: 2%;
         height: 80%;
     }
@@ -1170,7 +1182,7 @@ h2{
     }
 
     .about2 img{
-        margin-left: 25%;
+        margin-left: 0%;
         width: 50%;
     }
     .about1{
