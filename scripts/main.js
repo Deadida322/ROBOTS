@@ -577,7 +577,7 @@ if (document.documentElement.clientWidth <= 900){
         if (k == 1){
         $(".brush1").css({
             transform: 'scale(1.1)',
-            filter : 'blur(1px)',
+            filter : 'blur(0px)',
         });
         $(".hflex").css({
             transform: 'scale(0.5)',
@@ -605,7 +605,7 @@ if (document.documentElement.clientWidth <= 900){
         });
         $(".brush2").css({
             opacity: '80%',
-            filter : 'blur(1px)',
+            filter : 'blur(0px)',
             transform: 'scale(1.0)'
         });
         $(".brush3").css({
@@ -637,7 +637,7 @@ if (document.documentElement.clientWidth <= 900){
             $(".brush3").css({
                 opacity: '100%',
                 transform: 'scale(1.0)',
-                filter : 'blur(1px)',
+                filter : 'blur(0px)',
             });
             $(".brush4").css({
                 opacity: '100%',
@@ -678,12 +678,12 @@ if (document.documentElement.clientWidth <= 900){
             });
             $(".brush3").css({
                 opacity: '0%',
-                filter : 'blur(1px)',
+                filter : 'blur(0px)',
                 transform: 'scale(1.7)'
             });
             $(".brush4").css({
                 opacity: '0%',
-                filter : 'blur(1px)',
+                filter : 'blur(0px)',
                 transform: 'scale(1.7)'
             });
             $(".about05").css({
