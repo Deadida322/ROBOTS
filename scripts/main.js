@@ -37,7 +37,7 @@ if (document.documentElement.clientWidth > 900){
             $(".about3").css({
                 zIndex: '0'
             });
-            $(".h31").css({
+            $(".about05").css({
                 display: 'block',
                 filter : 'blur(00px)',
                 transform: 'scale(1)',
@@ -52,11 +52,7 @@ if (document.documentElement.clientWidth > 900){
                 filter : 'blur(0px)',
                 transform: 'scale(1.5)'
             });
-            $(".about1").css({
-                opacity: '100%',
-                filter : 'blur(0px)',
-                transform: 'scale(1)'
-            });
+            
     }
     if (ttt == 2){
         hh.text('Team');
@@ -85,15 +81,11 @@ if (document.documentElement.clientWidth > 900){
             filter : 'blur(0px)',
             transform: 'scale(1.7)'
         });
-        $(".h31").css({
-            filter : 'blur(5px)',
-            transform: 'scale(0.7)',
-            opacity: '00%'
-        });
-        $(".about1").css({
-            opacity: '0%',
-            filter : 'blur(5px)',
-            transform: 'scale(0.7)'
+        $(".about05").css({
+            display: 'block',
+            filter : 'blur(7px)',
+            transform: 'scale(0.5)',
+            opacity: '0%'
         });
         $(".about2").css({
             opacity: '100%',
@@ -180,16 +172,11 @@ if (document.documentElement.clientWidth > 900){
                 transform: 'scale(1)',
                 opacity: '100'
             });
-            $(".h31").css({
+            $(".about05").css({
                 display: 'block',
-                filter : 'blur(5px)',
+                filter : 'blur(7px)',
                 transform: 'scale(1.5)',
-                opacity: '0%'
-            });
-            $(".about1").css({
-                opacity: '00%',
-                filter : 'blur(5px)',
-                transform: 'scale(1.5)'
+                opacity: '00%'
             });
             $(".about2").css({
                 opacity: '00%',
@@ -246,16 +233,11 @@ if (document.documentElement.clientWidth > 900){
             filter : 'blur(5px)',
             transform: 'scale(2)'
         });
-        $(".h31").css({
+        $(".about05").css({
             display: 'block',
             filter : 'blur(0px)',
             transform: 'scale(1)',
-            opacity: '1000%'
-        });
-        $(".about1").css({
-            opacity: '100%',
-            filter : 'blur(0px)',
-            transform: 'scale(1)'
+            opacity: '100%'
         });
 
         $(".about3").css({
@@ -353,7 +335,7 @@ if (document.documentElement.clientWidth > 900){
                     transform: 'scale(0.5)',
                     opacity: '0'
                 });
-                $(".h31").css({
+                $(".about05").css({
                     display: 'block',
                     filter : 'blur(00px)',
                     transform: 'scale(1)',
@@ -380,11 +362,7 @@ if (document.documentElement.clientWidth > 900){
                 $(".about3").css({
                     opacity: '00%',
                 });
-                $(".about1").css({
-                    opacity: '100%',
-                    filter : 'blur(0px)',
-                    transform: 'scale(1)'
-                });
+                
             }
             if (k < 0 ){
                 $('nav').css({
@@ -424,15 +402,11 @@ if (document.documentElement.clientWidth > 900){
                     filter : 'blur(5px)',
                     transform: 'scale(2.0)'
                 });
-                $(".h31").css({
-                    filter : 'blur(5px)',
-                    transform: 'scale(2)',
-                    opacity: '00%'
-                });
-                $(".about1").css({
-                    opacity: '0%',
-                    filter : 'blur(5px)',
-                    transform: 'scale(1.5)'
+                $(".about05").css({
+                    display: 'block',
+                    filter : 'blur(7px)',
+                    transform: 'scale(1.5)',
+                    opacity: '0%'
                 });
                 $(".about2").css({
                     opacity: '00%',
@@ -485,15 +459,11 @@ if (document.documentElement.clientWidth > 900){
                     opacity: '00%',
                 });
                 
-                $(".h31").css({
-                    filter : 'blur(5px)',
-                    transform: 'scale(0.7)',
-                    opacity: '00%'
-                });
-                $(".about1").css({
-                    opacity: '0%',
-                    filter : 'blur(5px)',
-                    transform: 'scale(0.7)'
+                $(".about05").css({
+                    display: 'block',
+                    filter : 'blur(7px)',
+                    transform: 'scale(0.5)',
+                    opacity: '0%'
                 });
                 $(".about2").css({
                     opacity: '100%',
@@ -581,13 +551,7 @@ if (document.documentElement.clientWidth > 900){
             transform: 'scale(0.5)',
             opacity: '00%'
         });
-        $(".h31").css({
-            display: 'block',
-            filter : 'blur(00px)',
-            transform: 'scale(1)',
-            opacity: '100%'
-        });
-        
+                
         $(".arrows").css({
             opacity: '0%',
             transform: 'scale(0.1)',
@@ -597,10 +561,11 @@ if (document.documentElement.clientWidth > 900){
             filter : 'blur(0px)',
             transform: 'scale(1.5)'
         });
-        $(".about1").css({
-            opacity: '100%',
-            filter : 'blur(0px)',
-            transform: 'scale(1)'
+        $(".about05").css({
+            display: 'block',
+            filter : 'blur(00px)',
+            transform: 'scale(1)',
+            opacity: '100%'
         });
     });
 }
@@ -617,7 +582,7 @@ if (document.documentElement.clientWidth <= 900){
             transform: 'scale(0.5)',
             opacity: '0%'
         });
-        $(".h31").css({
+        $(".about05").css({
             display: 'block',
             filter : 'blur(00px)',
             transform: 'scale(1)',
@@ -628,10 +593,7 @@ if (document.documentElement.clientWidth <= 900){
             opacity: '100%',
             transform: 'scale(1.3)'
         });
-        $(".about1").css({
-            opacity: '100%',
-            transform: 'scale(1)'
-        });
+        
     }
     if (k == 2){
         $(".brush1").css({
@@ -646,13 +608,11 @@ if (document.documentElement.clientWidth <= 900){
             opacity: '100%',
             transform: 'scale(1.3)'
         });
-        $(".h31").css({
-            transform: 'scale(0.7)',
+        $(".about05").css({
+            display: 'block',
+            filter : 'blur(00px)',
+            transform: 'scale(0.5)',
             opacity: '00%'
-        });
-        $(".about1").css({
-            opacity: '0%',
-            transform: 'scale(0.7)'
         });
         $(".about2").css({
             opacity: '100%',
@@ -686,6 +646,9 @@ if (document.documentElement.clientWidth <= 900){
                 transform: 'scale(1)',
                 zIndex : '33000'
             });
+            $(".arrows").css({
+                zIndex : '999999'
+            });
             $(".arrow").attr("src", "assets/svg/ArrowR.png");
             $(".arrow2").attr("src", "assets/svg/ArrowR.png");
         }
@@ -711,13 +674,11 @@ if (document.documentElement.clientWidth <= 900){
                 opacity: '0%',
                 transform: 'scale(1.7)'
             });
-            $(".h31").css({
-                transform: 'scale(1.7)',
-                opacity: '00%'
-            });
-            $(".about1").css({
-                opacity: '0%',
-                transform: 'scale(1.3)'
+            $(".about05").css({
+                display: 'block',
+                filter : 'blur(00px)',
+                transform: 'scale(1)',
+                opacity: '0%'
             });
             $(".about2").css({
                 opacity: '00%',
@@ -727,6 +688,8 @@ if (document.documentElement.clientWidth <= 900){
                 opacity: '00%',
                 transform: 'scale(1.5)',
                 zIndex : '0'
+            });$(".arrows").css({
+                zIndex : '99999'
             });
             $(".arrow").attr("src", "assets/svg/Arrow.png");
             $(".arrow2").attr("src", "assets/svg/Arrow.png");
