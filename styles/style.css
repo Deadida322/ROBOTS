@@ -1,7 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
 }
 html {  
@@ -39,6 +49,8 @@ nav{
     width:30px;
     height: 100vh;
     opacity: 20%;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
 }
 nav:hover{
@@ -51,6 +63,8 @@ nav:hover{
     margin-top: 12px;
     width: 50px;
     opacity: 0%;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
@@ -58,6 +72,8 @@ nav:hover{
     width: 20px;
     height: 15px;
     margin: 5px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 .arr:hover{
@@ -65,29 +81,49 @@ nav:hover{
     margin: 5px 0 5px 0;
 }
 .up{
-    animation: arrnavup 1s  ease-in-out infinite alternate forwards ;
+    -webkit-animation: arrnavup 1s  ease-in-out infinite alternate forwards ;
+            animation: arrnavup 1s  ease-in-out infinite alternate forwards ;
 }
 .down{
-    animation: arrnavdown 1s  ease-in-out infinite alternate forwards ;
+    -webkit-animation: arrnavdown 1s  ease-in-out infinite alternate forwards ;
+            animation: arrnavdown 1s  ease-in-out infinite alternate forwards ;
 }
 .up :hover{
     cursor: pointer;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+@-webkit-keyframes arrnavup{
+    0%{
+        margin-top: 12px;
+    }
+    100%{
+        margin-top: 5px;
+    }
 }
 @keyframes arrnavup{
     0%{
-        transform: translateY(2px);
+        margin-top: 12px;
     }
     100%{
-        transform: translateY(-7px);
+        margin-top: 5px;
+    }
+}
+@-webkit-keyframes arrnavdown{
+    0%{
+        margin-bottom: 12px;
+    }
+    100%{
+        margin-bottom: 5px;
     }
 }
 @keyframes arrnavdown{
     0%{
-        transform: translateY(-2px);
+        margin-bottom: 12px;
     }
     100%{
-        transform: translateY(7px);
+        margin-bottom: 5px;
     }
 }
 .navstat{
@@ -100,6 +136,8 @@ nav:hover{
 }
 .navcontainer:hover #stat{
     opacity: 100%;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 .navcontainer{
@@ -107,15 +145,19 @@ nav:hover{
     margin-top: -3vh;
 }
 .loading{
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
     top: 10%;
     background-color: #262626;
     z-index: 9999999;
     position: fixed;
     width: 100%;
     height: 100%;
-    animation: fade 1s ease-in 1 forwards;
-    animation-delay: 3s;
+    -webkit-animation: fade 1s ease-in 1 forwards;
+            animation: fade 1s ease-in 1 forwards;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
 }
 .rotatemsg{
     top: 0%;
@@ -124,14 +166,16 @@ nav:hover{
     position: fixed;
     width: 100%;
     height: 100%;
-    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
     display: none;
 }
 .rotatemsg img{
     margin-left: 25%;
     width: 50%;
     margin-top: 3%;
-    animation: rotatemsg 1s ease-in-out infinite forwards;
+    -webkit-animation: rotatemsg 1s ease-in-out infinite forwards;
+            animation: rotatemsg 1s ease-in-out infinite forwards;
 
 }
 .rotatetxt{
@@ -139,15 +183,32 @@ nav:hover{
     text-align: center;
     font-size: 30px;
 }
-@keyframes rotatemsg{
+@-webkit-keyframes rotatemsg{
     0%{
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     80%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
     100%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes rotatemsg{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    80%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 .l1{
@@ -157,7 +218,8 @@ nav:hover{
     top: 31.5%;
     left: 48.2%;
     z-index: 3;
-    animation: rotate5 0.5s linear 10 forwards;
+    -webkit-animation: rotate5 0.5s linear 10 forwards;
+            animation: rotate5 0.5s linear 10 forwards;
 }
 .l2{
     position: absolute;
@@ -165,7 +227,8 @@ nav:hover{
     top: 27.5%;
     left: 47.1%;
     z-index: 3;
-    animation: rotate4 5s linear 2 forwards;
+    -webkit-animation: rotate4 5s linear 2 forwards;
+            animation: rotate4 5s linear 2 forwards;
 }
 .l3{
     position: absolute;
@@ -173,7 +236,8 @@ nav:hover{
     top: 16.5%;
     left: 40.1%;
     z-index: 2;
-    animation: rotate3 5s linear 2 forwards;
+    -webkit-animation: rotate3 5s linear 2 forwards;
+            animation: rotate3 5s linear 2 forwards;
 }
 .l4{
     position: absolute;
@@ -181,7 +245,8 @@ nav:hover{
     top: 13%;
     left: 39%;
     z-index: 1;
-    animation: rotate2 2s ease-in-out 3 alternate;
+    -webkit-animation: rotate2 2s ease-in-out 3 alternate;
+            animation: rotate2 2s ease-in-out 3 alternate;
 }
 .l5{
     position: absolute;
@@ -189,66 +254,163 @@ nav:hover{
     top: 10%;
     left: 37.5%;
     z-index: 0;
-    animation: rotate1 1s ease-in-out 6 alternate;
+    -webkit-animation: rotate1 1s ease-in-out 6 alternate;
+            animation: rotate1 1s ease-in-out 6 alternate;
+}
+@-webkit-keyframes rotate1{
+    0%{
+        -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+    }
+    100%{
+        -webkit-transform: scale(1.03);
+                transform: scale(1.03);
+    }
 }
 @keyframes rotate1{
     0%{
-        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+                transform: scale(1.0);
     }
     100%{
-        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+                transform: scale(1.03);
+    }
+}
+@-webkit-keyframes rotate2{
+    0%{
+        -webkit-transform: scale(1.0) rotate(0deg);
+                transform: scale(1.0) rotate(0deg);
+    }
+    100%{
+        -webkit-transform: scale(1.01) rotate(360deg);
+                transform: scale(1.01) rotate(360deg);
     }
 }
 @keyframes rotate2{
     0%{
-        transform: scale(1.0) rotate(0deg);
+        -webkit-transform: scale(1.0) rotate(0deg);
+                transform: scale(1.0) rotate(0deg);
     }
     100%{
-        transform: scale(1.01) rotate(360deg);
+        -webkit-transform: scale(1.01) rotate(360deg);
+                transform: scale(1.01) rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate3{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    50%{
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+    100%{
+        -webkit-transform: rotate(-720deg);
+                transform: rotate(-720deg);
     }
 }
 @keyframes rotate3{
     0%{
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     50%{
-        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
     }
     100%{
-        transform: rotate(-720deg);
+        -webkit-transform: rotate(-720deg);
+                transform: rotate(-720deg);
+    }
+}
+@-webkit-keyframes rotate4{
+    0%{
+        -webkit-transform: scale(1.0) rotate(0deg);
+                transform: scale(1.0) rotate(0deg);
+    }
+    100%{
+        -webkit-transform: scale(1.07) rotate(-160deg);
+                transform: scale(1.07) rotate(-160deg);
     }
 }
 @keyframes rotate4{
     0%{
-        transform: scale(1.0) rotate(0deg);
+        -webkit-transform: scale(1.0) rotate(0deg);
+                transform: scale(1.0) rotate(0deg);
     }
     100%{
-        transform: scale(1.07) rotate(-160deg);
+        -webkit-transform: scale(1.07) rotate(-160deg);
+                transform: scale(1.07) rotate(-160deg);
+    }
+}
+@-webkit-keyframes rotate5{
+    0%{
+        -webkit-transform: scale(1.0) rotate(0deg);
+                transform: scale(1.0) rotate(0deg);
+    }
+    100%{
+        -webkit-transform: scale(1.0) rotate(360deg);
+                transform: scale(1.0) rotate(360deg);
     }
 }
 @keyframes rotate5{
     0%{
-        transform: scale(1.0) rotate(0deg);
+        -webkit-transform: scale(1.0) rotate(0deg);
+                transform: scale(1.0) rotate(0deg);
     }
     100%{
-        transform: scale(1.0) rotate(360deg);
+        -webkit-transform: scale(1.0) rotate(360deg);
+                transform: scale(1.0) rotate(360deg);
+    }
+}
+@-webkit-keyframes fade{
+    0%{ 
+        top: 10%;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        opacity: 100%;
+    }
+    99%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    100%{
+        top: 0%;
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
+        display: none;
+        opacity: 0%;
+        z-index: 0;
     }
 }
 @keyframes fade{
     0%{ 
         top: 10%;
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
         opacity: 100%;
     }
     99%{
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
     100%{
         top: 0%;
-        transform: scale(0.1);
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
         display: none;
         opacity: 0%;
         z-index: 0;
+    }
+}
+@-webkit-keyframes fade2{
+    0%{ 
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
     }
 }
 @keyframes fade2{
@@ -269,8 +431,13 @@ nav:hover{
     height: 100%;
     top: 0;
     z-index: 3;
-    transform: scale(2);
-    filter: blur(1px);
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
 }
 .brush2{
@@ -283,8 +450,13 @@ nav:hover{
     top: 0;
     z-index: 4;
     opacity: 0%;
-    transform: scale(2);
-    filter: blur(7px);
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(7px);
+            filter: blur(7px);
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
 }
 .brush3{
@@ -297,8 +469,13 @@ nav:hover{
     top: 0;
     z-index: 5;
     opacity: 0%;
-    transform: scale(2);
-    filter: blur(7px);
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(7px);
+            filter: blur(7px);
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
 }
 .brush4{
@@ -311,13 +488,21 @@ nav:hover{
     top: 0;
     z-index: 5;
     opacity: 0%;
-    transform: scale(1.5);
-    filter: blur(7px);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-filter: blur(7px);
+            filter: blur(7px);
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
 }
 .arrows{
     position: fixed;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     cursor: pointer;
     z-index: 2999;
 }
@@ -327,8 +512,14 @@ nav:hover{
     left: 47%;
     bottom: 2%;
     width: 7%;
-    animation: arrow1 1s ease-in-out infinite alternate;
-    user-select: none;
+    -webkit-animation: arrow1 1s ease-in-out infinite alternate;
+            animation: arrow1 1s ease-in-out infinite alternate;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: 5s ease-in-out;
+    -o-transition: 5s ease-in-out;
     transition: 5s ease-in-out;
     opacity: 100%;
     user-select: none;
@@ -340,8 +531,12 @@ nav:hover{
     left: 47%;
     bottom: 7%;
     width: 7%;
-    animation: arrow2 1s ease-in-out infinite alternate;
-    user-select: none;
+    -webkit-animation: arrow2 1s ease-in-out infinite alternate;
+            animation: arrow2 1s ease-in-out infinite alternate;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     cursor: pointer;
     z-index: 300;
     
@@ -349,26 +544,45 @@ nav:hover{
 .hflex{
     position: absolute;
     top: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100vw;
     height: 50vh;
-    transform: scale(1);
-    filter: blur(0px);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transition: all 1.2s ease-in-out;
+    -o-transition: all 1.2s ease-in-out;
     transition: all 1.2s ease-in-out;
 }
 .hhflex{
     height: 100vh;
     width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 h1{
     z-index: 0;
     text-transform: uppercase;
     font-family: RobotoBold;
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
     font-size: 21vw;
 }
@@ -376,6 +590,8 @@ h2{
     z-index: 0;
     text-align: center;
     font-family: RobotoLight;
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
     margin-top: -6%;
     font-size: 7vw;
@@ -390,8 +606,13 @@ h2{
     position: absolute;
     top: 10% ;
     opacity: 0%;
-    filter: blur(7px);
-    transform: scale(1.5);
+    -webkit-filter: blur(7px);
+            filter: blur(7px);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
     background-image: url(../assets/img/head1.png);
     background-position: center;
@@ -403,16 +624,22 @@ h2{
 .about1{
     position: absolute;
     z-index: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 1152px;
     height: 600px;
     margin-left: 20%;
     top: 32%;
     font-size: 30px;
     opacity: 0%;
-    filter: blur(5px);
-    transform: scale(1.5) ;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: scale(1.5) ;
+        -ms-transform: scale(1.5) ;
+            transform: scale(1.5) ;
 }
 .h32{
     font-size: 90px;
@@ -420,6 +647,8 @@ h2{
     text-transform: uppercase;
     text-align: center;
     margin-top: 0% ;
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
     background-image: url(../assets/img/head2.png);
     background-position: center;
@@ -435,6 +664,8 @@ h2{
     text-transform: uppercase;
     text-align: center;
     margin-top: 0% ;
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
     transition: 1.2s ease-in-out;
     background-image: url(../assets/img/head3.png);
     background-position: center;
@@ -445,49 +676,86 @@ h2{
     margin-left: 26.5%;
 }
 .about2{
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 80%;
     left: 10%;
     top: 1%;
     height: 800px;
     z-index: 6;
-    flex-direction: column;
-    filter: blur(7px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-filter: blur(7px);
+            filter: blur(7px);
     opacity: 0%;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition:1.2s ease-in-out;
+    -o-transition:1.2s ease-in-out;
     transition:1.2s ease-in-out;
 }
 .about3{
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 80%;
     left: 10%;
     top: 2%;
     height: 800px;
     z-index: 0;
-    flex-direction: column;
-    filter: blur(5px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
     opacity: 0%;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition: 1.0s ease-in-out;
+    -o-transition: 1.0s ease-in-out;
     transition: 1.0s ease-in-out;
 }
 .teamContainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 0;
     height: 400px;
     margin-top: -10%;
     text-align: center;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .teamItem{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-size: cover;
     background-position: center;
     padding-top: 11% ;
@@ -496,9 +764,15 @@ h2{
     height: 640px;
 }
 .teamItemS{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-size: cover;
     background-position: center;
     width: 24%;
@@ -530,49 +804,83 @@ h2{
     background-image: url(../assets/img/phone33.png);
 }
 .about2 img{
-    user-select: none;
+    -ms-user-select: none;
+        user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    filter: grayscale(0.75);
-    margin-left: 25%;
+    -webkit-filter: grayscale(0.75);
+            filter: grayscale(0.75);
+    margin-left: 0%;
     width: 50%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .about3 img{
-    user-select: none;
+    -ms-user-select: none;
+        user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    filter: grayscale(0.75);
-    margin-left: 25%;
+    -webkit-filter: grayscale(0.75);
+            filter: grayscale(0.75);
+    margin-left: 0%;
     width: 50%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .about3 img:hover{
-    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
     cursor: pointer;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .about2 img:hover{
-    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
     cursor: pointer;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
+}
+@-webkit-keyframes arrow1{
+    0%{
+        margin-bottom: 0px;
+    }
+    100%{
+        margin-bottom: 15px;
+    }
 }
 @keyframes arrow1{
     0%{
-        transform: translateY(0px)
+        margin-bottom: 0px;
     }
     100%{
-        transform: translateY(-15px)
+        margin-bottom: 15px;
+    }
+}
+@-webkit-keyframes arrow2{
+    0%{
+        margin-bottom: 0px;
+    }
+    100%{
+        margin-bottom: 30px;
     }
 }
 @keyframes arrow2{
     0%{
-        transform: translateY(0px)
+        margin-bottom: 0px;
     }
     100%{
-        transform: translateY(-30px)
+        margin-bottom: 30px;
     }
 }
 .txt{
@@ -641,12 +949,15 @@ h2{
         height: 415px;
     }
     .about2 img{
-        margin-left: 25%;
+        margin-left: 0%;
         width: 50%;
     }
     .about1{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         width: 60%;
         height: 600px;
         margin-left: 20%;
@@ -680,16 +991,25 @@ h2{
     .hflex{
         position: absolute;
         top: 15%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 100vw;
         height: 50vh;
         margin-left: 20%;
     }
     .about3, .about2, .about1{
-        filter: blur(0px);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
     }
     .h31{
         background-image: url(../assets/img/head1m.webp);
@@ -729,31 +1049,54 @@ h2{
         background-image: url(../assets/img/qrm.webp);
     }
     .brush1{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;        
-        transform: scale(1.5);
-        filter: blur(0px);
+        -webkit-transform: scale(1.5);        
+            -ms-transform: scale(1.5);        
+                transform: scale(1.5);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
     }
     .brush2{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
         background-image: url(../assets/img/brush2m.webp);
-        transform: scale(1.5);
-        filter: blur(0px);
+        -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+                transform: scale(1.5);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
     }
     .brush3{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
         background-image: url(../assets/img/brush3m.webp);
-        transform: scale(1.5);
-        filter: blur(0px);
+        -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+                transform: scale(1.5);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
     }
     .brush4{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
         background-image: url(../assets/img/brush4m.webp);
-        transform: scale(1.3);
-        filter: blur(0px);
+        -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+                transform: scale(1.3);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
     }
     .about2{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
-        filter: blur(px);
+        -webkit-filter: blur(px);
+                filter: blur(px);
         width: 80%;
         margin-left: 10%;
         top: 2%;
@@ -769,16 +1112,22 @@ h2{
         min-height: 195px;
     }
     .about3{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
-        filter: blur(0px);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
         width: 80%;
         left: 20%;
         top: 2%;
         height: 80%;
     }
     .h31{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
-        filter: blur(0px);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
         z-index: 1;
         font-family: RobotoBold;
         font-size: 55px;
@@ -799,6 +1148,8 @@ h2{
         height: 80px;
     }
     .about2{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
         width: 80%;
         left: 10%;
@@ -825,6 +1176,8 @@ h2{
         width: 50%;
     }
     .about1{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
         width: 70%;
         height: 600px;
@@ -844,6 +1197,8 @@ h2{
         height: 30%;
     }
     *{
+        -webkit-transition: all 1.5s ease-in-out;
+        -o-transition: all 1.5s ease-in-out;
         transition: all 1.5s ease-in-out;
     }
 }
@@ -880,6 +1235,8 @@ h2{
 }
 @media screen and (max-width: 700px){   
     h1{
+        -webkit-transition: 2s ease-in-out;
+        -o-transition: 2s ease-in-out;
         transition: 2s ease-in-out;
     }
     .qr{
@@ -936,5 +1293,4 @@ h2{
         display: block;
     }
 }
-
 
