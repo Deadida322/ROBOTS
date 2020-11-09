@@ -334,7 +334,7 @@ if (document.documentElement.clientWidth > 900){
             if (flag1){
                 ttt = 1;
                 posY = 3;
-                setTimeout(() => posY=9, 300);
+                setTimeout(() => posY=9, 800);
                 down01();
             }
                 
@@ -342,27 +342,27 @@ if (document.documentElement.clientWidth > 900){
             if (posY > 8 && posY < 14  && k > 0 ){
                 ttt = 2;
                 posY = 9;
-                setTimeout(() => posY=15, 300);
+                setTimeout(() => posY=15, 800);
                 down02();
                 console.log('сработало1')
 
             }
             if (posY >= 14 && posY <= 16  && k > 0 ){
                 ttt = 3;
-                setTimeout(() => posY=13, 300);
+                setTimeout(() => posY=13, 800);
                 down03();
                 console.log('сработало2')
             }
             if (k < 0 && posY <= 4 && posY >= 0){
                 ttt = 0;
                 posY = 4;
-                setTimeout(() => posY=0, 300);
+                setTimeout(() => posY=0, 800);
                 up01();
             }
             if (k < 0 && posY <=8 && posY >4){
                 ttt = 1;
                 posY = 8;
-                setTimeout(() => posY=4, 300);
+                setTimeout(() => posY=4, 800);
                 up02();
             }
             if (k < 0 && posY < 14 && posY >=9){
