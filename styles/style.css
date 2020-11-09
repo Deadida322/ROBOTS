@@ -696,7 +696,7 @@ h2{
     left: 10%;
     top: 1%;
     height: 800px;
-    z-index: 6;
+    z-index: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
