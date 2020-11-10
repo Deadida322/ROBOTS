@@ -273,7 +273,6 @@ function up03(){
 if (document.documentElement.clientWidth > 900){   
 
     $('.down').on('click', function(event) {
-        console.log(posY)
         if(ttt>4){ttt=4;}
         if(ttt<0){ttt=0;}
         ttt +=1;
@@ -293,7 +292,6 @@ if (document.documentElement.clientWidth > 900){
     
 });
     $('.up').on('click', function(event) {
-        console.log(posY)
         ttt -=1;
         let hh = $('title');
         if (ttt == 0){
@@ -333,8 +331,8 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 1;
                 posY = 0;
                 permission = false;
-                setTimeout(() => permission = true, 1500);
-                setTimeout(() => posY = 1, 800);
+                setTimeout(() => permission = true, 1000);
+                setTimeout(() => posY = 1, 1000);
                 down01();
             }
                 
@@ -343,8 +341,8 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 2;
                 posY = 1;
                 permission = false;
-                setTimeout(() => permission = true, 1500);
-                setTimeout(() => posY = 2, 800);
+                setTimeout(() => permission = true, 1000);
+                setTimeout(() => posY = 2, 1000);
                 down02();
                 
             }
@@ -352,8 +350,8 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 3;
                 posY = 2;
                 permission = false;
-                setTimeout(() => permission = true, 1500);
-                setTimeout(() => posY = 3 , 800);
+                setTimeout(() => permission = true, 1000);
+                setTimeout(() => posY = 3 , 1000);
                 down03();
                 
             }
@@ -361,26 +359,25 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 2;
                 posY = 3;
                 permission = false;
-                setTimeout(() => permission = true, 1500);
-                setTimeout(() => posY = 2, 800);
+                setTimeout(() => permission = true, 1000);
+                setTimeout(() => posY = 2, 1000);
                 up03();
             }
             if (k < 0 && posY == 2 && permission == true){
                 ttt = 1;
                 posY = 2;
                 permission = false;
-                setTimeout(() => permission = true, 1500);
-                setTimeout(() => posY=1, 800);
+                setTimeout(() => permission = true, 1000);
+                setTimeout(() => posY=1, 1000);
                 up02();
             }
             if (k < 0 && posY == 1 && permission == true){
                 ttt = 0;
                 posY = 1;
                 permission = false;
-                setTimeout(() => permission = true, 1500);
-                setTimeout(() => posY=0, 300);
+                setTimeout(() => permission = true, 1000);
+                setTimeout(() => posY=0, 1000);
                 up01();
-                console.log('ваш тт при скролле вверх', ttt)
             }
 
         }
@@ -398,8 +395,8 @@ if (document.documentElement.clientWidth > 900){
         ttt = 1;
         posY = 0;
         permission = false;
-        setTimeout(() => permission = true, 1500);
-        setTimeout(() => posY = 1, 800);
+        setTimeout(() => permission = true, 1000);
+        setTimeout(() => posY = 1, 1000);
         down01();
     });
 }
