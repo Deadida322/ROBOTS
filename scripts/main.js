@@ -230,7 +230,7 @@ function up02(){
 }
 function up03(){
     let hh = $('title');
-    hh.text('team');
+    hh.text('Team');
     stat = $('title').html();
     document.getElementById('stat').innerHTML = stat;
     $('.navcontainer').css({
@@ -271,157 +271,141 @@ function up03(){
 }
 
 if (document.documentElement.clientWidth > 900){   
-    let ttt = 0;
+
     $('.down').on('click', function(event) {
+        console.log(posY)
         if(ttt>4){ttt=4;}
         if(ttt<0){ttt=0;}
         ttt +=1;
         let hh = $('title');
-    if (ttt == 1){
-        posY = 4;
-        down01();
-    }
-    if (ttt == 2){
-        posY = 9;
-        down02();
-    }
-    if (ttt == 3){
-        posY = 16;
-        down03();
-    }
+        if (ttt == 1){
+            posY = 1;
+            down01();
+        }
+        if (ttt == 2){
+            posY = 2;
+            down02();
+        }
+        if (ttt == 3){
+            posY = 3;
+            down03();
+        }
     
 });
     $('.up').on('click', function(event) {
+        console.log(posY)
         ttt -=1;
         let hh = $('title');
         if (ttt == 0){
             posY = 0;
             up01();
         }
-    if (ttt == 1){
-        posY = 3;
-        up02();
-    } 
-    if (ttt == 2){
-        posY = 9;
-        up03();
-    }
+        if (ttt == 1){
+            posY = 1;
+            up02();
+        } 
+        if (ttt == 2){
+            posY = 2;
+            up03();
+        }
  });
     
 
 
-    
+    let permission = true;
+    let hh = $('title');
+    let posY = 0;
+    let ttt = 0;
     function scroll1(event){
         k = event.originalEvent.deltaY;
-        let hh = $('title');
         if(k != 0){
-            posY = Math.floor(posY + k/100);
             if (posY <0){
                 posY = 0;
             }
-            if (posY>16){
-                posY = 16;
+            if (posY > 4){
+                posY = 3;
             }
-            let flag1 = 0;
             
             var stat = $('title').html();
             document.getElementById('stat').innerHTML = stat;
-
-            if (posY > 2  && posY <= 8 && k > 0 ){
-                flag1 = true;
-            }
             
-            if (flag1){
+            if (posY == 0 && k > 0 && permission == true){
                 ttt = 1;
-                posY = 3;
-                setTimeout(() => posY=9, 800);
+                posY = 0;
+                permission = false;
+                setTimeout(() => permission = true, 1500);
+                setTimeout(() => posY = 1, 800);
                 down01();
             }
                 
             }
-            if (posY > 8 && posY < 14  && k > 0 ){
+            if (posY == 1 && k > 0 && permission == true){
                 ttt = 2;
-                posY = 9;
-                setTimeout(() => posY=15, 800);
+                posY = 1;
+                permission = false;
+                setTimeout(() => permission = true, 1500);
+                setTimeout(() => posY = 2, 800);
                 down02();
-                console.log('сработало1')
-
+                
             }
-            if (posY >= 14 && posY <= 16  && k > 0 ){
+            if (posY == 2 && k > 0 && permission == true){
                 ttt = 3;
-                setTimeout(() => posY=13, 800);
+                posY = 2;
+                permission = false;
+                setTimeout(() => permission = true, 1500);
+                setTimeout(() => posY = 3 , 800);
                 down03();
-                console.log('сработало2')
+                
             }
-            if (k < 0 && posY <= 4 && posY >= 0){
-                ttt = 0;
-                posY = 4;
-                setTimeout(() => posY=0, 800);
-                up01();
-            }
-            if (k < 0 && posY <=8 && posY >4){
-                ttt = 1;
-                posY = 8;
-                setTimeout(() => posY=4, 800);
-                up02();
-            }
-            if (k < 0 && posY < 14 && posY >=9){
+            if (k < 0 && posY == 3 && permission == true){
                 ttt = 2;
-                posY = 13;
-                setTimeout(() => posY=8, 300);
+                posY = 3;
+                permission = false;
+                setTimeout(() => permission = true, 1500);
+                setTimeout(() => posY = 2, 800);
                 up03();
             }
+            if (k < 0 && posY == 2 && permission == true){
+                ttt = 1;
+                posY = 2;
+                permission = false;
+                setTimeout(() => permission = true, 1500);
+                setTimeout(() => posY=1, 800);
+                up02();
+            }
+            if (k < 0 && posY == 1 && permission == true){
+                ttt = 0;
+                posY = 1;
+                permission = false;
+                setTimeout(() => permission = true, 1500);
+                setTimeout(() => posY=0, 300);
+                up01();
+                console.log('ваш тт при скролле вверх', ttt)
+            }
+
         }
 
     $(window).on('wheel', function(event){
-        scroll1(event);
-        console.log(posY, k);
+       scroll1(event);
     });
     $("img, a").on("dragstart", function(event) { event.preventDefault(); });
     $('.arrows').on('click', function(event) {
-        posY = 3;
         let hh = $('title');
         hh.text('Game');
         var stat = $('title').html();
         document.getElementById('stat').innerHTML = stat;
         
-        $('nav').css({
-            backgroundColor: 'rgba(0, 26, 255, 0.202)'
-        });
-        $('.navcontainer').css({
-            marginTop:'23vh'
-        });
-        $(".brush1").css({
-            filter : 'blur(4px)',
-            transform: 'scale(1.5)'
-        });
-        $(".hflex").css({
-            filter : 'blur(4px)',
-            transform: 'scale(0.5)',
-            opacity: '00%'
-        });
-                
-        $(".arrows").css({
-            opacity: '0%',
-            transform: 'scale(0.1)',
-        });
-        $(".brush2").css({
-            opacity: '100%',
-            filter : 'blur(0px)',
-            transform: 'scale(1.5)'
-        });
-        $(".about05").css({
-            display: 'block',
-            filter : 'blur(00px)',
-            transform: 'scale(1)',
-            opacity: '100%'
-        });
+        ttt = 1;
+        posY = 0;
+        permission = false;
+        setTimeout(() => permission = true, 1500);
+        setTimeout(() => posY = 1, 800);
+        down01();
     });
 }
 if (document.documentElement.clientWidth <= 900){ 
     let k = 0;
     $('.arrows').on('click', function(event) {
-        console.log(k);
         k +=1;
         if (k == 1){
         $(".brush1").css({
