@@ -32,6 +32,13 @@ a:hover{
     font-family: RobotoRegular; 
     src: url(fonts/Roboto-Regular.ttf);
 }
+.yetanotherkostil{
+    position: absolute;
+    min-width: 150vw;
+    min-height: 150vh;
+    background-color: transparent;
+    opacity: 0;
+}
 body{
     font-family: RobotoLight;
     color: #ddedff;
