@@ -308,7 +308,7 @@ if (document.documentElement.clientWidth > 900){
         }
  });
     
-
+    let vz = document.documentElement.clientWidth;
 
     let permission = true;
     let hh = $('title');
@@ -331,7 +331,8 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 1;
                 posY = 0;
                 permission = false;
-                setTimeout(() => permission = true, 1000);
+                if (vz < 1600){setTimeout(() => permission = true, 1500);}
+                else{setTimeout(() => permission = true, 1000);}
                 setTimeout(() => posY = 1, 1000);
                 down01();
             }
@@ -341,16 +342,18 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 2;
                 posY = 1;
                 permission = false;
-                setTimeout(() => permission = true, 1000);
+                if (vz < 1600){setTimeout(() => permission = true, 1500);}
+                else{setTimeout(() => permission = true, 1000);}
                 setTimeout(() => posY = 2, 1000);
                 down02();
-                
             }
             if (posY == 2 && k > 0 && permission == true){
                 ttt = 3;
                 posY = 2;
                 permission = false;
-                setTimeout(() => permission = true, 1000);
+                console.log(vz)
+                if (vz < 1600){setTimeout(() => permission = true, 1500);}
+                else{setTimeout(() => permission = true, 1000);}
                 setTimeout(() => posY = 3 , 1000);
                 down03();
                 
@@ -359,7 +362,8 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 2;
                 posY = 3;
                 permission = false;
-                setTimeout(() => permission = true, 1000);
+                if (vz < 1600){setTimeout(() => permission = true, 1500);}
+                else{setTimeout(() => permission = true, 1000);}
                 setTimeout(() => posY = 2, 1000);
                 up03();
             }
@@ -367,7 +371,8 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 1;
                 posY = 2;
                 permission = false;
-                setTimeout(() => permission = true, 1000);
+                if (vz < 1600){setTimeout(() => permission = true, 1500);}
+                else{setTimeout(() => permission = true, 1000);}
                 setTimeout(() => posY=1, 1000);
                 up02();
             }
@@ -375,7 +380,8 @@ if (document.documentElement.clientWidth > 900){
                 ttt = 0;
                 posY = 1;
                 permission = false;
-                setTimeout(() => permission = true, 1000);
+                if (vz < 1600){setTimeout(() => permission = true, 1500);}
+                else{setTimeout(() => permission = true, 1000);}
                 setTimeout(() => posY=0, 1000);
                 up01();
             }
