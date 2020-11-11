@@ -36,8 +36,10 @@ body{
     font-family: RobotoLight;
     color: #ddedff;
     background-color: #262626;
-    min-width: 110vw;
-    min-height: 110vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 .forever150{
     width: 100vw;
