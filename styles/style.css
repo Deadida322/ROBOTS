@@ -36,8 +36,8 @@ body{
     font-family: RobotoLight;
     color: #ddedff;
     background-color: #262626;
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 110vw;
+    min-height: 110vh;
 }
 .forever150{
     width: 100vw;
@@ -814,8 +814,8 @@ h2{
         user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -webkit-filter: grayscale(0.75);
-            filter: grayscale(0.75);
+    -webkit-filter: grayscale(0.5);
+            filter: grayscale(0.5);
     margin-left: 0%;
     width: 50%;
     -webkit-transition: 0.5s;
@@ -827,8 +827,8 @@ h2{
         user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -webkit-filter: grayscale(0.75);
-            filter: grayscale(0.75);
+    -webkit-filter: grayscale(0.5);
+            filter: grayscale(0.5);
     margin-left: 0%;
     width: 50%;
     -webkit-transition: 0.5s;
