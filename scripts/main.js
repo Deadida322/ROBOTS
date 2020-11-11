@@ -272,6 +272,59 @@ function up03(){
 
 if (document.documentElement.clientWidth > 900){   
 
+
+    $("body").keyup(function(e) {
+        if(ttt>3){ttt=3;}
+        if(ttt<0){ttt=0;}
+            if (e.which == 34 || e.which == 32 || e.which == 40 || e.which == 39) {
+                console.log("pressed");
+                ttt +=1;
+                let hh = $('title');
+                if (ttt == 1){
+                    posY = 1;
+                    down01();
+                }
+                if (ttt == 2){
+                    posY = 2;
+                    down02();
+                }
+                if (ttt == 3){
+                    posY = 3;
+                    down03();
+                }
+                }
+                if (e.which == 33 || e.which == 38 || e.which == 37) {
+                ttt -=1;
+                let hh = $('title');
+                if (ttt == 0){
+                    posY = 0;
+                    up01();
+                }
+                if (ttt == 1){
+                    posY = 1;
+                    up02();
+                } 
+                if (ttt == 2){
+                    posY = 2;
+                    up03();
+                }
+            }
+            if (e.which == 36) {
+                ttt = 0;
+                posY = 0;
+                up03();
+                up02();
+                up01();
+            }
+            if (e.which == 35) {
+                ttt = 3;
+                posY = 3;
+                down01();
+                down02();
+                down03();
+            }
+    });
+
     $('.down').on('click', function(event) {
         if(ttt>4){ttt=4;}
         if(ttt<0){ttt=0;}
