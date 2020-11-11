@@ -316,6 +316,7 @@ if (document.documentElement.clientWidth > 900){
     let ttt = 0;
     function scroll1(event){
         k = event.originalEvent.deltaY;
+        setInterval(() => k = 0, 1);
         if(k != 0){
             if (posY <0){
                 posY = 0;
